@@ -76,9 +76,12 @@ ul#collectionGrid{
 }
 #filtersWrap h3{
   margin-bottom: 0;
-  font-size: 177%;
+  font-size: 90%;
   margin-left: 32px;
-  color: black;
+  color: midnightblue;
+  font-weight: 800;
+  font-family: 'Century Gothic Bold';
+  text-transform: uppercase;
 }
 #collectionGrid .details{
  margin-top: 15px !important;
@@ -95,13 +98,14 @@ letter-spacing: 0.8px;
 }
 
 form.js-collection-filter h6 {
-  color: black;
-  background-color: white;
+  color: midnightblue;
   padding: 12px;
-  width: 270px;
-  height: 50px;
-  border: 1px solid rgba(161,161,166,0.4);
-  font-size: 14px;
+  width: 178px;
+  height: 32px;
+  font-size: 12px;
+  background-color: lightsteelblue;
+  font-weight: 600;
+  font-family: 'Gotham Light';
 }
 
 form h6  .angle-down:after {
@@ -123,10 +127,10 @@ margin-right: 2px;
   border-top: none;
   position: relative;
   border: 1px solid darkgray;
-  bottom: 17px;
+  bottom: 33px;
   padding-top: 15px;
   height: auto;
-  width: 235px;
+  width: auto;
   z-index: 9999;
   background-color: white;
   transition: opacity .4s ease-in-out;
@@ -137,6 +141,7 @@ margin-right: 2px;
 
 #filterList ul {
   margin-bottom: 0;
+  border-bottom: 1px solid;
 }
 
 #filterList li {
@@ -156,6 +161,10 @@ margin-right: 2px;
   position: relative;
   bottom: 5px;
   width: max-content;
+  font-size: 75%;
+  font-family: 'Gotham Medium';
+  border-bottom: 19px black;
+  color: midnightblue;
 }
 
 
@@ -177,6 +186,8 @@ margin-right: 2px;
 
 div#sort {
   position: relative;
+  margin: 0% 12% 4% 27%;
+
 }
 
 .checkBox {
@@ -328,7 +339,7 @@ div.hero_image{
 #customLoader {
   position: relative;
   /*color:*/
-  left: 20%;
+  left: 10%;
   bottom: 27px;
   width: 25px;
   height: 25px;
@@ -339,17 +350,16 @@ div.hero_image{
 }
 
 #sort-by {
-  color: black;
   background-color: white;
   padding: 12px;
-  width: 270px;
-  height: 50px;
+  width: 203px;
+  height: 30px;
   border: 1px solid rgba(161,161,166,0.4);
   font-size: 14px;
-  margin: 10% 30% 29%;
+  font-family: 'Gotham Light';
 }
 
-}
+
 
 select {
   border-radius: 3px;

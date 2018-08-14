@@ -36,7 +36,8 @@
    position: absolute;
    display: flex;
   right: 20px;
-  left: 10px;
+  left: 30px;
+  margin-top: -21px;
   }
   .js-collection-filter{
     padding-left: 0;
@@ -193,11 +194,11 @@ ul#collectionGrid{
 {% endif %}
 
 {% if collection.description and collection.description.size > 0 %}
-  <div id="borderTest">
+  <!-- <div id="borderTest">
     <div id="bannerImage" class="collection-description">
       {{ collection.description }}
   </div>
-</div>
+</div> -->
 {% endif %}
 
 {% if collection.handle == 'guardrails' or collection.handle == "full-size-bed-rails"%}
@@ -228,8 +229,9 @@ ul#collectionGrid{
   <div id="mainFilterContainer" class="{{collection.handle}}">
     {% include 'custom_filter'%}
     <div id="sort" class="M_SM_Sort">
+      <label for="sort-by" style="font-size: 83%; color: midnightblue;">Sort by:</label>
       <select id="sort-by">
-        <option id="select" value="manual">Sort By</option>
+        <option id="select" value="manual">Select</option>
         <option name="price-ascending" value="All">Price: Low to High</option>
         <option name="price-descending" value="All">Price: High to Low</option>
         <!-- <option name="title-ascending" value="All">A-Z</option>

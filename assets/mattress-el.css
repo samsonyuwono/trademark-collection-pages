@@ -19,6 +19,8 @@
   font-family: 'Stylish Calligraphy';
   src:url('//cdn.shopify.com/s/files/1/0578/7201/files/Stylish_Calligraphy_Demo.ttf?4903678941630649982')
 }
+
+
 #el_background{
   background-image: url(https://cdn.shopify.com/s/files/1/0578/7201/files/experience_luxury.png?5363211900990102124);
   width: 100%;
@@ -29,6 +31,7 @@
 #el-header{
   width: 100%;
   margin: auto;
+  margin-top: 91px;
 }
 #el_title{
   color: #ffffff !important;
@@ -37,14 +40,15 @@
   opacity: 0.92;
   margin: 4% 7%;
   height: 80px;
-  line-height: 100%
+  line-height: 100%;
+  padding-top: 45px;
 }
 #el_title span{
   font-family: "Stylish Calligraphy";
   font-size: 3.5vw;
 }
 #el_title #select-text{
-  font-family: 'montserrat';
+  font-family: inherit;
   font-size: 1vw
 }
 
@@ -66,7 +70,8 @@
   border-radius: 0;
   width: 80%;
   margin: auto;
-  margin-top: 150px;
+  margin-top: 258px;
+  font-weight: 800
 }
 
 #double-label-slider.ui-slider .ui-slider-handle {
@@ -120,7 +125,7 @@
 }
 
 #double-label-slider.ui-slider .ui-slider-pip .ui-slider-label h6 {
-  font-family: "Gotham Black";
+  font-family: "Gotham Bold";
   color: #ffffff !important;
   font-size: 1.2vw;
   margin-bottom: 0;
@@ -146,6 +151,10 @@
 @media screen and (max-width: 1200px) {
   .ui-slider-label div{
     bottom: 149px;
+  }
+  #el_title{
+    height: 173px;
+    padding-top: 37px;
   }
   #double-label-slider.ui-slider {
     margin-top: 130px;
@@ -201,9 +210,9 @@
   .ui-slider-label div{
     bottom: 117px;
   }
-  #double-label-slider.ui-slider {
+  /* #double-label-slider.ui-slider {
     margin-top: 102px;
-  }
+  } */
   #double-label-slider.ui-slider .ui-slider-pip .ui-slider-label,
   #double-label-slider.ui-slider .ui-slider-pip .ui-slider-label i,
   #double-label-slider.ui-slider .ui-slider-pip .ui-slider-label span {
@@ -233,7 +242,7 @@
     bottom: 105px;
   }
   #double-label-slider.ui-slider {
-    margin-top: 97px;
+    margin-top: 179px;
   }
   #double-label-slider.ui-slider .ui-slider-pip .ui-slider-label,
   #double-label-slider.ui-slider .ui-slider-pip .ui-slider-label i,
@@ -262,9 +271,7 @@
   .ui-slider-label div{
     bottom: 89px;
   }
-  #double-label-slider.ui-slider {
-    margin-top: 90px;
-  }
+
   #double-label-slider.ui-slider .ui-slider-pip .ui-slider-label,
   #double-label-slider.ui-slider .ui-slider-pip .ui-slider-label i,
   #double-label-slider.ui-slider .ui-slider-pip .ui-slider-label span {
@@ -288,9 +295,9 @@
   .ui-slider-label div{
     bottom: 79px;
   }
-  #double-label-slider.ui-slider {
+  /* #double-label-slider.ui-slider {
     margin-top: 81px;
-  }
+  } */
   #double-label-slider.ui-slider .ui-slider-pip .ui-slider-label,
   #double-label-slider.ui-slider .ui-slider-pip .ui-slider-label i,
   #double-label-slider.ui-slider .ui-slider-pip .ui-slider-label span {
@@ -499,7 +506,7 @@
     height: 340px;
   }
   #el_title{
-    height: 70px
+    height: 165px
   }
 }
 @media only screen and (max-width: 1069px){
@@ -507,7 +514,8 @@
     height: 320px;
   }
   #el_title{
-    height: 55px
+    height: 90px;
+    padding-top: 35px;
   }
 }
 @media only screen and (max-width: 1025px){
@@ -528,7 +536,8 @@
     height: 270px;
   }
   #el_title{
-    height: 30px
+    height: 30px;
+    padding-top: 30px;
   }
 }
 @media only screen and (max-width: 550px){

@@ -1408,7 +1408,6 @@ $('#Material ul li :checkbox').click(function() {
                   var swatchLink = url.split(/"/)[1];
                   var swatchColor = swatchLink.split("/")[11].split(".")[0].replace(/[0-9]/g, '').split("-").join(" ").replace(/\b\w/g, l => l.toUpperCase()).strip()
                   // var productLink = "http://www.deltachildren.com/collection/cribs" + $('a', this).attr('href');
-                  var swatchColorId= $(this).attr('id')
                   //from li
                   var imageColor = $(this).attr("title").replace(/\d+/g, '').replace(/[{()}]/g, '').strip()
 
@@ -1420,7 +1419,7 @@ $('#Material ul li :checkbox').click(function() {
                      var swatchSelectedImageSrc = $('a', this).css('background-image').split(/"/)[1];
 
                      var productLink = "http://www.deltachildren.com" + $('a', this).attr('href');
-
+                     debugger;
                        /*
                         once matched update main image shown for product on collection page according to swatch color
                         update image href and image title href to redirect to appropriate product page according to variant color

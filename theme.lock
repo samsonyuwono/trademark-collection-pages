@@ -126,7 +126,7 @@ assets/cocoa-258.png:
 assets/cocoa-with-beige-welt-911.png:
   development: 2018-08-06T17:31:04-04:00   9bb18b8dd11c6abefedad879c511f5d7
 assets/collection-filter.css:
-  development: 2018-08-14T11:20:42-04:00   bf0f9159f61c75bb65322ddd39e14098
+  development: 2018-08-14T16:43:28-04:00   2ed2a638b77e37e35775cf5b72fa1b46
 assets/collection.css:
   development: 2018-08-13T09:44:50-04:00   4d5adae7109c023ed33b11571e96118d
 assets/collection.js:
@@ -256,11 +256,11 @@ assets/mag_popup.css:
 assets/mag_popup.js:
   development: 2018-08-06T12:21:15-04:00   72ef33db997ed60b077d2b175a9448a0
 assets/mattress-bv.css:
-  development: 2018-08-14T11:46:35-04:00   13f9fe8fd426fb976d4abc7b32b6c50a
+  development: 2018-08-14T19:09:24-04:00   74bc03fbeabc82981c5b583445aed71b
 assets/mattress-el.css:
-  development: 2018-08-14T11:46:36-04:00   3eefab5ba9ccfcd129172ea969ed9414
+  development: 2018-08-14T18:12:51-04:00   119e878018f7fd595ac99f6329e19190
 assets/mattress-nc.css:
-  development: 2018-08-14T11:46:37-04:00   6ad987f40b0b24da6d95eaec526fce5e
+  development: 2018-08-14T18:52:52-04:00   ce1b1b842ecc5c4f57dafffd91ea2dd1
 assets/merlot-615.png:
   development: 2018-08-06T17:34:06-04:00   be24976e84c660af47fb4e0a8d2fe900
 assets/midnight-cherry-613.png:
@@ -298,7 +298,7 @@ assets/product.css:
 assets/product.js:
   development: 2018-08-06T12:21:16-04:00   3d56381ae6f301a57ee1166d20fd3198
 assets/product_filter.js:
-  development: 2018-08-14T09:45:05-04:00   eb71fbe0b2a0e5f50c134dc7061fd051
+  development: 2018-08-14T15:00:17-04:00   4f0adf883ee34c431c3b50b81ce8ec64
 assets/purple.png:
   development: 2018-08-06T17:34:02-04:00   ed254131e22a3f826c10f69bcb79486c
 assets/rustic-bianca-170.png:
@@ -362,7 +362,7 @@ assets/sweet-grey-3101.png:
 assets/taupe-065.png:
   development: 2018-08-06T17:34:23-04:00   de570bb123eaf56d81d315db3369e2c6
 assets/theme.scss.liquid:
-  development: 2018-08-14T10:41:37-04:00   1b4373c01e1fc8fff27b0a4d9a45134c
+  development: 2018-08-14T15:21:21-04:00   d6366498b8cfc882b1964712a3c7f39b
 assets/toast-velvet-932.png:
   development: 2018-08-06T17:34:24-04:00   a54738eaac1fd85bcefbe05eb572f100
 assets/touchPunch.js:
@@ -438,7 +438,7 @@ sections/cart-template.liquid:
 sections/collection-list.liquid:
   development: 2018-08-09T17:17:27-04:00   7f2f06ab781ef0b73aaf6eadb3a56daf
 sections/collection-template.liquid:
-  development: 2018-08-13T12:50:32-04:00   97a596cadb228a93d83f5115f771db6e
+  development: 2018-08-14T13:01:53-04:00   97a596cadb228a93d83f5115f771db6e
 sections/custom-html.liquid:
   development: 2018-08-06T12:21:09-04:00   037c975a962425380aff89c59be934da
 sections/featured-article.liquid:
@@ -492,7 +492,7 @@ snippets/collection-item.liquid:
 snippets/currency-selector.liquid:
   development: 2018-08-06T12:21:18-04:00   54a1e591c57af78fb514087231ee20e6
 snippets/custom_filter.liquid:
-  development: 2018-08-14T10:51:50-04:00   f8863c2d5454b370cc2f3475d24efb6e
+  development: 2018-08-14T15:47:20-04:00   8a95da585f177846847e9ce259887d48
 snippets/form-errors.liquid:
   development: 2018-08-06T12:21:18-04:00   517f9f4cb97dfc183b1d5ec59afc8688
 snippets/google-fonts.liquid:
@@ -582,7 +582,7 @@ templates/cart.liquid:
 templates/cart.mini-cart.liquid:
   development: 2018-08-06T12:21:20-04:00   58536b1046229725b3ec330989d0de79
 templates/collection.liquid:
-  development: 2018-08-14T10:51:31-04:00   1c1b9023a1f988d2581ab4f0feef0c76
+  development: 2018-08-14T16:37:33-04:00   ace4413da909447d6e35947ea2555276
 templates/customers/account.liquid:
   development: 2018-08-06T12:21:20-04:00   45893842e1fb7c545212fe88324db094
 templates/customers/activate_account.liquid:
@@ -604,7 +604,7 @@ templates/index.liquid:
 templates/list-collections.liquid:
   development: 2018-08-06T12:21:21-04:00   7c9b54020705d65d4949bc8c93676576
 templates/page.collections.liquid:
-  development: 2018-08-06T12:21:21-04:00   de39fde9e66458bc57d6f988c805b812
+  development: 2018-08-14T12:26:23-04:00   9784498e39c9ac837ccc6f10f78f3fb0
 templates/page.contact.liquid:
   development: 2018-08-06T12:21:21-04:00   dc3e138310b4d06107e18c821479ed02
 templates/page.faq.liquid:

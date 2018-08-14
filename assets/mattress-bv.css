@@ -35,15 +35,17 @@
   font-family: 'Gotham Ultra' !important;
   font-size: 1.9vw;
   margin: 5% 7%;
-  line-height: 100%
+  line-height: 100%;
+  padding-top: 68px;
 }
 #bv_title span{
   font-family: "Lie To Me";
   font-size: 3.1vw
 }
 #bv_title #select-text{
-  font-family: "Gotham Book";
+  font-family: inherit;
   font-size: 1vw
+  font-weight: lighter;
 }
 #feature-container{
   display: flex;
@@ -93,7 +95,7 @@
 }
 @media only screen and (max-width: 800px){
   #bv_background{
-    height: 210px;
+    height: 253px;
   }
 }
 @media only screen and (max-width: 641px){
@@ -153,7 +155,7 @@
   border-radius: 0;
   width: 75%;
   margin: auto;
-  margin-top: 150px;
+  margin-top: 250px;
 }
 
 #double-label-slider.ui-slider .ui-slider-handle {
@@ -234,7 +236,7 @@
     bottom: 130px;
   }
   #double-label-slider.ui-slider {
-    margin-top: 140px;
+    margin-top: 178px;
   }
   #double-label-slider.ui-slider .ui-slider-pip .ui-slider-label,
   #double-label-slider.ui-slider .ui-slider-pip .ui-slider-label i,
@@ -279,7 +281,7 @@
     bottom: 110px;
   }
   #double-label-slider.ui-slider {
-    margin-top: 110px;
+    margin-top: 137px;
   }
   #double-label-slider.ui-slider .ui-slider-pip .ui-slider-label img {
     width: 45px;
@@ -305,7 +307,7 @@
     bottom: 100px;
   }
   #double-label-slider.ui-slider {
-    margin-top: 95px;
+    margin-top: 134px;
   }
   #double-label-slider.ui-slider .ui-slider-pip .ui-slider-label,
   #double-label-slider.ui-slider .ui-slider-pip .ui-slider-label i,
@@ -332,7 +334,7 @@
     bottom: 90px;
   }
   #double-label-slider.ui-slider {
-    margin-top: 80px;
+    margin-top: 131px;
   }
   #double-label-slider.ui-slider .ui-slider-pip .ui-slider-label,
   #double-label-slider.ui-slider .ui-slider-pip .ui-slider-label i,
@@ -346,7 +348,7 @@
     bottom: 75px;
   }
   #double-label-slider.ui-slider {
-    margin-top: 74px;
+    margin-top: 122px;
   }
   #double-label-slider.ui-slider .ui-slider-pip .ui-slider-label img {
     width: 30px;
