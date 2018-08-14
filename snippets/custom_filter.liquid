@@ -815,8 +815,8 @@
 {% assign collection = collections[{{collection.handle}}] %}
   <form class="js-collection-filter" id="Material" data-collection="{{collection.id}}">
     <input id="hideThisBox" data-group="{{collection.handle}}" type="checkbox" disabled="" selected="" value=""></input>
-    <h6 style="width: 146px;">MATERIAL<span class="angle-down"></span></h6>
-    <div id="filterList" class="fadeIn" style="width: 146px;">
+    <h6 style="width: 300px;">MATERIAL<span class="angle-down"></span></h6>
+    <div id="filterList" class="fadeIn" style="width: 312px;">
       {% for tag in collection.all_tags %}
         {% if collection.handle == 'luxury' and tag != '' and tag == 'Innerspring-Coils' or tag == 'Soy-Enhanced-Foam' or tag == 'Pocketed-Coils' or tag == 'Soy-Enhanced-Edge-Support'%}
           <ul>

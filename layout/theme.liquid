@@ -4,7 +4,7 @@
 <!--[if IE 9 ]><html class="no-js csscalc no-flexbox ie9" lang="{{ shop.locale }}"><![endif]-->
 <!--[if (gt IE 9)|!(IE)]><!--><html class="no-js" lang="{{ shop.locale }}"><!--<![endif]-->
   <head>
-        <base href="/">
+    <base href="/">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, height=device-height, minimum-scale=1.0, user-scalable=0">
@@ -35,6 +35,23 @@
 
     {{ 'theme.scss.css' | asset_url | stylesheet_tag }}
     {{'nursery-banner.css' | asset_url | stylesheet_tag}}
+
+    <!-- stylesheet call for slider Mattress Pages -->
+   {% if collection.handle == 'value' or collection.handle == 'luxury' or collection.handle == 'natural' %}
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.10.4/themes/flick/jquery-ui.css">
+    {{'slider.css' | asset_url | stylesheet_tag}}
+  {%endif%}
+
+    <!--   stylesheet call for Mattress Pages page -->
+   {% if page.handle == 'mattresses' %}
+      {{'mattress-landing.css' | asset_url | stylesheet_tag}}
+    {%elsif collection.handle == 'value'%}
+      {{'mattress-bv.css' | asset_url | stylesheet_tag}}
+    {%elsif collection.handle == 'luxury'%}
+      {{'mattress-el.css' | asset_url | stylesheet_tag}}
+    {%elsif collection.handle == 'natural'%}
+      {{'mattress-nc.css' | asset_url | stylesheet_tag}}
+   {%endif%}
 
 
     <script src="{{ 'lazysizes.min.js' | asset_url }}" async></script>
@@ -141,5 +158,7 @@
   </body>
 
   {{ 'header-footer-popup.js' | asset_url | script_tag }}
+
+
 
 </html>

@@ -126,7 +126,7 @@ assets/cocoa-258.png:
 assets/cocoa-with-beige-welt-911.png:
   development: 2018-08-06T17:31:04-04:00   9bb18b8dd11c6abefedad879c511f5d7
 assets/collection-filter.css:
-  development: 2018-08-14T10:10:49-04:00   559f33d85bbac7d6685cd59ba3bdc3dd
+  development: 2018-08-14T11:20:42-04:00   bf0f9159f61c75bb65322ddd39e14098
 assets/collection.css:
   development: 2018-08-13T09:44:50-04:00   4d5adae7109c023ed33b11571e96118d
 assets/collection.js:
@@ -255,6 +255,12 @@ assets/mag_popup.css:
   development: 2018-08-06T12:21:14-04:00   1e80b627f6e1d2534e511c7244f03deb
 assets/mag_popup.js:
   development: 2018-08-06T12:21:15-04:00   72ef33db997ed60b077d2b175a9448a0
+assets/mattress-bv.css:
+  development: 2018-08-14T11:46:35-04:00   13f9fe8fd426fb976d4abc7b32b6c50a
+assets/mattress-el.css:
+  development: 2018-08-14T11:46:36-04:00   3eefab5ba9ccfcd129172ea969ed9414
+assets/mattress-nc.css:
+  development: 2018-08-14T11:46:37-04:00   6ad987f40b0b24da6d95eaec526fce5e
 assets/merlot-615.png:
   development: 2018-08-06T17:34:06-04:00   be24976e84c660af47fb4e0a8d2fe900
 assets/midnight-cherry-613.png:
@@ -337,6 +343,10 @@ assets/sisal-727.png:
   development: 2018-08-06T17:34:20-04:00   1e182f71a17209fe74ee665d8ba033b7
 assets/sisal-with-dark-chocolate-frame-1327.png:
   development: 2018-08-06T17:34:21-04:00   1e182f71a17209fe74ee665d8ba033b7
+assets/slider.css:
+  development: 2018-08-14T11:45:59-04:00   16a36b1f0573088bb3127bdd956031a7
+assets/slider.js:
+  development: 2018-08-14T11:53:44-04:00   1ad7d1ba327340754ecd1281e1ca2e9f
 assets/spiced-cinnamon-209.png:
   development: 2018-08-06T17:34:20-04:00   48f7b697f8297a4c791161edb7c06283
 assets/stained-grey-054.png:
@@ -352,9 +362,11 @@ assets/sweet-grey-3101.png:
 assets/taupe-065.png:
   development: 2018-08-06T17:34:23-04:00   de570bb123eaf56d81d315db3369e2c6
 assets/theme.scss.liquid:
-  development: 2018-08-13T10:04:22-04:00   4e66474318f4f7cc75398fab7337ce9e
+  development: 2018-08-14T10:41:37-04:00   1b4373c01e1fc8fff27b0a4d9a45134c
 assets/toast-velvet-932.png:
   development: 2018-08-06T17:34:24-04:00   a54738eaac1fd85bcefbe05eb572f100
+assets/touchPunch.js:
+  development: 2018-08-14T11:56:14-04:00   00938b38814983b18d02bfe53c312404
 assets/twilight-grey-076.png:
   development: 2018-08-06T17:34:24-04:00   26619b70ef64e37f1f657d771284e045
 assets/variantSkuInfo.js:
@@ -412,7 +424,7 @@ config/settings_schema.json:
 layout/minimal.liquid:
   development: 2018-08-06T12:21:18-04:00   38a4856746ba7d55dba0d43d218c4fdc
 layout/theme.liquid:
-  development: 2018-08-08T18:35:58-04:00   d15c51eeb9a12a6a199f0be9ee1e6782
+  development: 2018-08-14T12:15:52-04:00   4a74c3ba274feefc18713f7007958dc1
 locales/en.default.json:
   development: 2018-08-06T12:21:18-04:00   2750fb69cb0220c43e694519e7267eb5
 locales/fr.json:
@@ -480,7 +492,7 @@ snippets/collection-item.liquid:
 snippets/currency-selector.liquid:
   development: 2018-08-06T12:21:18-04:00   54a1e591c57af78fb514087231ee20e6
 snippets/custom_filter.liquid:
-  development: 2018-08-10T16:50:55-04:00   3493de025afa85923c3252ae6a00d15f
+  development: 2018-08-14T10:51:50-04:00   f8863c2d5454b370cc2f3475d24efb6e
 snippets/form-errors.liquid:
   development: 2018-08-06T12:21:18-04:00   517f9f4cb97dfc183b1d5ec59afc8688
 snippets/google-fonts.liquid:
@@ -507,6 +519,12 @@ snippets/image-size.liquid:
   development: 2018-08-06T12:21:19-04:00   865e83f9b94888e2154848f35665f181
 snippets/insta-footer.liquid:
   development: 2018-08-06T12:21:19-04:00   e0022ec8871b04d461130e06543995dc
+snippets/mattress-bv.liquid:
+  development: 2018-08-14T12:17:24-04:00   51accb10219a2f73824981956f989ce5
+snippets/mattress-el.liquid:
+  development: 2018-08-14T12:17:04-04:00   211ab3063bb1ff93e88dcb7313c5de41
+snippets/mattress-nc.liquid:
+  development: 2018-08-14T12:17:27-04:00   45538486f87d74a9e7fa031b407e2ee4
 snippets/microdata-schema.liquid:
   development: 2018-08-06T12:21:19-04:00   dee15b0d383ec860e2ef556bbb69ae2d
 snippets/mobileHeader.liquid:
@@ -564,7 +582,7 @@ templates/cart.liquid:
 templates/cart.mini-cart.liquid:
   development: 2018-08-06T12:21:20-04:00   58536b1046229725b3ec330989d0de79
 templates/collection.liquid:
-  development: 2018-08-14T10:01:46-04:00   ebd8c2868d325d115b888afaee626609
+  development: 2018-08-14T10:51:31-04:00   1c1b9023a1f988d2581ab4f0feef0c76
 templates/customers/account.liquid:
   development: 2018-08-06T12:21:20-04:00   45893842e1fb7c545212fe88324db094
 templates/customers/activate_account.liquid:
