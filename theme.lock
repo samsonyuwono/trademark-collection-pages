@@ -126,7 +126,7 @@ assets/cocoa-258.png:
 assets/cocoa-with-beige-welt-911.png:
   development: 2018-08-06T17:31:04-04:00   9bb18b8dd11c6abefedad879c511f5d7
 assets/collection-filter.css:
-  development: 2018-08-13T12:30:03-04:00   6f4188fd9cee99001a415af1f8a702a5
+  development: 2018-08-14T10:10:49-04:00   559f33d85bbac7d6685cd59ba3bdc3dd
 assets/collection.css:
   development: 2018-08-13T09:44:50-04:00   4d5adae7109c023ed33b11571e96118d
 assets/collection.js:
@@ -292,7 +292,7 @@ assets/product.css:
 assets/product.js:
   development: 2018-08-06T12:21:16-04:00   3d56381ae6f301a57ee1166d20fd3198
 assets/product_filter.js:
-  development: 2018-08-13T18:14:41-04:00   a0a24bac4389e526c70d2f6128fd2cfc
+  development: 2018-08-14T09:45:05-04:00   eb71fbe0b2a0e5f50c134dc7061fd051
 assets/purple.png:
   development: 2018-08-06T17:34:02-04:00   ed254131e22a3f826c10f69bcb79486c
 assets/rustic-bianca-170.png:
@@ -564,7 +564,7 @@ templates/cart.liquid:
 templates/cart.mini-cart.liquid:
   development: 2018-08-06T12:21:20-04:00   58536b1046229725b3ec330989d0de79
 templates/collection.liquid:
-  development: 2018-08-13T13:47:30-04:00   68dedf82c9b3ac1bd09fffeeb0881dec
+  development: 2018-08-14T10:01:46-04:00   ebd8c2868d325d115b888afaee626609
 templates/customers/account.liquid:
   development: 2018-08-06T12:21:20-04:00   45893842e1fb7c545212fe88324db094
 templates/customers/activate_account.liquid:

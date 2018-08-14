@@ -1398,7 +1398,7 @@ $('#Material ul li :checkbox').click(function() {
            }
 
          });
-
+          //for swatches on collections pages before filter
          $('.product-item__info ul li').each(function() {
              console.log("hit")
 
@@ -1423,9 +1423,9 @@ $('#Material ul li :checkbox').click(function() {
 
                        /*
                         once matched update main image shown for product on collection page according to swatch color
-                        udpdate image href and image title href to redirect to appropriate product page according to variant color
+                        update image href and image title href to redirect to appropriate product page according to variant color
                        */
-                      $('.product-item__image', productContainer).attr('srcset', swatchSelectedImageSrc);
+                      $('.product-item__image', productContainer).attr('srcset', swatchSelectedImageSrc); //atattaches color swatches isntead of image. currently there is no link to a product image  associated with swatch
                       $('product-item__link', productContainer).attr('href', productLink);
                       $('h3 a', productContainer).attr('href', productLink);
                    }

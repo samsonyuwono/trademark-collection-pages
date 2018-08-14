@@ -192,7 +192,11 @@ ul#collectionGrid{
 {% endif %}
 
 {% if collection.description and collection.description.size > 0 %}
-  <div id="borderTest"><div id="bannerImage" class="collection-description">{{ collection.description }}</div></div>
+  <div id="borderTest">
+    <div id="bannerImage" class="collection-description">
+      {{ collection.description }}
+  </div>
+</div>
 {% endif %}
 
 {% if collection.handle == 'guardrails' or collection.handle == "full-size-bed-rails"%}
