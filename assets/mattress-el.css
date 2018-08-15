@@ -71,7 +71,6 @@
   width: 80%;
   margin: auto;
   margin-top: 258px;
-  font-weight: 800
 }
 
 #double-label-slider.ui-slider .ui-slider-handle {
@@ -125,7 +124,7 @@
 }
 
 #double-label-slider.ui-slider .ui-slider-pip .ui-slider-label h6 {
-  font-family: "Gotham Bold";
+  font-family: "Gotham Ultra";
   color: #ffffff !important;
   font-size: 1.2vw;
   margin-bottom: 0;
@@ -136,7 +135,8 @@
   font-family: "Gotham Book";
   color: #ffffff !important;
   font-size: .9vw;
-  opacity: 0.52
+  opacity: 0.52;
+  line-height: 1.2;
 }
 
 @media screen and (min-width: 1300px) {
@@ -181,7 +181,7 @@
     bottom: 135px;
   }
   #double-label-slider.ui-slider {
-    margin-top: 120px;
+    margin-top: 136px;
   }
   #double-label-slider.ui-slider .ui-slider-pip .ui-slider-label img {
     width: 50px;
@@ -210,9 +210,9 @@
   .ui-slider-label div{
     bottom: 117px;
   }
-  /* #double-label-slider.ui-slider {
+  #double-label-slider.ui-slider {
     margin-top: 102px;
-  } */
+  }
   #double-label-slider.ui-slider .ui-slider-pip .ui-slider-label,
   #double-label-slider.ui-slider .ui-slider-pip .ui-slider-label i,
   #double-label-slider.ui-slider .ui-slider-pip .ui-slider-label span {
@@ -242,7 +242,7 @@
     bottom: 105px;
   }
   #double-label-slider.ui-slider {
-    margin-top: 179px;
+    margin-top: 190px;
   }
   #double-label-slider.ui-slider .ui-slider-pip .ui-slider-label,
   #double-label-slider.ui-slider .ui-slider-pip .ui-slider-label i,
