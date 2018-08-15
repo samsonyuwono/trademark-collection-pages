@@ -24,7 +24,8 @@
   width: 100%;
   background-repeat: no-repeat;
   background-size: contain;
-  height: 380px
+  height: 400px;
+  background-position-y: -6%;
 }
 #bv-header{
   width: 100%;
@@ -43,9 +44,10 @@
   font-size: 3.1vw
 }
 #bv_title #select-text{
-  font-family: inherit;
-  font-size: 1vw
+  font-family: sans-serif;
+  font-size: 1vw;
   font-weight: lighter;
+  font-weight: 600;
 }
 #feature-container{
   display: flex;
@@ -55,12 +57,23 @@
   margin: auto;
 }
 
+@media only screen and (min-width: 2000px){
+
+  #bv_background{
+    background-position-y: 19% !important;
+  }
+}
+
+
 @media only screen and (min-width: 1570px){
   #bv_title{
     font-size: 30px
   }
   #bv_title span{
     font-size: 50px
+  }
+  #bv_background{
+    background-position-y: 10%;
   }
 }
 @media only screen and (max-width: 1250px){
@@ -76,26 +89,41 @@
 @media only screen and (max-width: 1100px){
   #bv_background{
     height: 330px;
+    background-position-y: -8%;
   }
 }
 @media only screen and (max-width: 1050px){
   #bv_background{
     height: 320px;
+    background-position-y: -20%;
   }
 }
 @media only screen and (max-width: 1025px){
   #bv_background{
     height: 270px;
+    background-position-y: -11%;
   }
 }
 @media only screen and (max-width: 900px){
+  #bv_title{
+    margin-top: 58px;
+  }
   #bv_background{
     height: 260px;
+    background-position-y: -34%;
   }
 }
 @media only screen and (max-width: 800px){
   #bv_background{
-    height: 253px;
+    height: 237px;
+    background-position-y: -50%;
+  }
+}
+@media only screen and (max-width: 700px){
+  #bv_background{
+    height: 225px;
+    background-position-y: -90%;
+}
   }
 }
 @media only screen and (max-width: 641px){
@@ -155,7 +183,7 @@
   border-radius: 0;
   width: 75%;
   margin: auto;
-  margin-top: 250px;
+  margin-top: 220px;
 }
 
 #double-label-slider.ui-slider .ui-slider-handle {
@@ -210,10 +238,13 @@
 }
 
 #double-label-slider.ui-slider .ui-slider-pip .ui-slider-label h6 {
-  font-family: "Gotham Black";
+  font-family: "Gotham Ultra";
   color: #243f68 !important;
   font-size: 1.3vw;
-  margin-bottom: 0
+  margin-bottom: 0;
+  font-weight: bolder;
+  padding-top: 8%;
+  line-height: 1.3;
 }
 
 #double-label-slider.ui-slider .ui-slider-pip .ui-slider-label p {

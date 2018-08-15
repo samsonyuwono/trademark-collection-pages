@@ -256,9 +256,11 @@ assets/mag_popup.css:
 assets/mag_popup.js:
   development: 2018-08-06T12:21:15-04:00   72ef33db997ed60b077d2b175a9448a0
 assets/mattress-bv.css:
-  development: 2018-08-14T19:09:24-04:00   74bc03fbeabc82981c5b583445aed71b
+  development: 2018-08-15T12:56:52-04:00   ec52ec59017b23f33b8aeda5c918fc1f
 assets/mattress-el.css:
-  development: 2018-08-14T18:12:51-04:00   119e878018f7fd595ac99f6329e19190
+  development: 2018-08-15T11:23:43-04:00   528f6ad263fe147347892d085a7dbd04
+assets/mattress-landing.css:
+  development: 2018-08-15T11:05:19-04:00   e86129050126459525bfaa2e6bf6c8ac
 assets/mattress-nc.css:
   development: 2018-08-14T18:52:52-04:00   ce1b1b842ecc5c4f57dafffd91ea2dd1
 assets/merlot-615.png:
@@ -523,6 +525,8 @@ snippets/mattress-bv.liquid:
   development: 2018-08-14T12:17:24-04:00   51accb10219a2f73824981956f989ce5
 snippets/mattress-el.liquid:
   development: 2018-08-14T12:17:04-04:00   211ab3063bb1ff93e88dcb7313c5de41
+snippets/mattress-landing.liquid:
+  development: 2018-08-15T11:03:30-04:00   edc89ed74269d4dcfa4bd97f6fe6bb0e
 snippets/mattress-nc.liquid:
   development: 2018-08-14T12:17:27-04:00   45538486f87d74a9e7fa031b407e2ee4
 snippets/microdata-schema.liquid:
@@ -610,7 +614,7 @@ templates/page.contact.liquid:
 templates/page.faq.liquid:
   development: 2018-08-06T12:21:21-04:00   7e05442097da7d6227a697adc826d0ee
 templates/page.liquid:
-  development: 2018-08-06T12:21:21-04:00   e4218b53d269926b7ec1b553fcb4506d
+  development: 2018-08-15T11:10:42-04:00   1971f06b0be9404d3007380b348e4e6a
 templates/page.wide.liquid:
   development: 2018-08-06T12:21:21-04:00   cebcb95feea58e7354eb08bf0791e818
 templates/password.liquid:
