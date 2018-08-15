@@ -78,9 +78,9 @@ ul#collectionGrid{
   margin-bottom: 0;
   font-size: 90%;
   margin-left: 32px;
-  color: midnightblue;
+  color: #0e2f63;
   font-weight: 800;
-  font-family: 'Century Gothic Bold';
+  font-family: 'Gotham Black';
   text-transform: uppercase;
 }
 #collectionGrid .details{
@@ -99,10 +99,10 @@ letter-spacing: 0.8px;
 
 form.js-collection-filter h6 {
   color: midnightblue;
-  padding: 12px;
+  padding: 8px;
   width: 178px;
   height: 32px;
-  font-size: 12px;
+  font-size: 16px;
   background-color: lightsteelblue;
   font-weight: 600;
   font-family: 'Gotham Light';
@@ -127,8 +127,8 @@ margin-right: 2px;
   border-top: none;
   position: relative;
   border: 1px solid darkgray;
-  bottom: 33px;
-  padding-top: 15px;
+  bottom: 38px;
+  padding-top: 10px;
   height: auto;
   width: auto;
   z-index: 9999;
@@ -136,23 +136,25 @@ margin-right: 2px;
   transition: opacity .4s ease-in-out;
   -moz-transition: opacity .4s ease-in-out;
   -webkit-transition: opacity .4s ease-in-out;
-  line-height: 27px;
+  line-height: 18px;
 }
 
 #filterList ul {
   margin-bottom: 0;
-  border-bottom: 1px solid;
+  border-bottom: 1px #d3e4fe solid;
 }
 
 #filterList li {
   list-style: none !important;
   position: relative;
-  /* right: 17px; */
-  padding: 7px 5px;
+  right: 2px;
+  top: 5px;
+  padding: 3% 6%;
 }
 
 #filterList li input {
   float: left;
+  height: 10px;
 }
 
 .checkBoxText {
@@ -161,10 +163,11 @@ margin-right: 2px;
   position: relative;
   bottom: 5px;
   width: max-content;
-  font-size: 75%;
-  font-family: 'Gotham Medium';
-  border-bottom: 19px black;
-  color: midnightblue;
+  font-size: 14px;
+  font-family: 'Gotham Book';
+  /* border-bottom: 19px black; */
+
+  color: #0e2f63;
 }
 
 
@@ -185,10 +188,11 @@ margin-right: 2px;
 }
 
 div#sort {
-  position: relative;
-  margin: 0% 12% 4% 27%;
-
-}
+  margin: 2% 12% 4% 25%;
+  display: flex;
+  flex-direction: row;
+  white-space: nowrap;
+}}
 
 .checkBox {
   margin: 0px 0 !important;
@@ -353,7 +357,7 @@ div.hero_image{
   background-color: white;
   padding: 12px;
   width: 203px;
-  height: 30px;
+  height: 32px;
   border: 1px solid rgba(161,161,166,0.4);
   font-size: 14px;
   font-family: 'Gotham Light';

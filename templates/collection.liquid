@@ -35,9 +35,9 @@
    visibility: hidden;
    position: absolute;
    display: flex;
-  right: 20px;
-  left: 30px;
-  margin-top: -21px;
+   right: 20px;
+   left: 30px;
+   margin-top: -21px;
   }
   .js-collection-filter{
     padding-left: 0;
@@ -70,7 +70,7 @@
 
   /*end overlap styling*/
 
-  ul#append { padding-top: 10%; }
+  ul#append { padding-top: 3%; }
 
   /*for iPads, etc. */
   @media screen and (max-width: 1024px) and (min-width: 641px) {
@@ -221,15 +221,15 @@ ul#collectionGrid{
 {% unless collection.handle == 'guardrails' or collection.handle == "full-size-bed-rails" %}
 
 {% comment %}RENDER FILTERS{% endcomment %}
-<div id="filtersWrap" style="margin-top: 105px;">
+<div id="filtersWrap" style="margin-top: 150px;">
   <div>
-    <h3 style="font-family: Montserrat, Helvetica, Arial, sans-serif">Filters</h3>
+    <h3>Filters</h3>
     <div id="customLoader"></div>
   </div>
   <div id="mainFilterContainer" class="{{collection.handle}}">
     {% include 'custom_filter'%}
     <div id="sort" class="M_SM_Sort">
-      <label for="sort-by" style="font-size: 83%; color: midnightblue;">Sort by:</label>
+      <label for="sort-by" style="font-size: 83%; color: #0e2f63; padding-right: 8px;">Sort by:</label>
       <select id="sort-by">
         <option id="select" value="manual">Select</option>
         <option name="price-ascending" value="All">Price: Low to High</option>

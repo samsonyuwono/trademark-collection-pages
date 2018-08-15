@@ -70,7 +70,7 @@
   border-radius: 0;
   width: 80%;
   margin: auto;
-  margin-top: 258px;
+  margin-top: 190px;
 }
 
 #double-label-slider.ui-slider .ui-slider-handle {
@@ -181,8 +181,9 @@
     bottom: 135px;
   }
   #double-label-slider.ui-slider {
-    margin-top: 136px;
-  }
+    margin-top: 156px;
+    }
+
   #double-label-slider.ui-slider .ui-slider-pip .ui-slider-label img {
     width: 50px;
     height: 50px;
@@ -210,9 +211,9 @@
   .ui-slider-label div{
     bottom: 117px;
   }
-  #double-label-slider.ui-slider {
-    margin-top: 102px;
-  }
+  /* #double-label-slider.ui-slider {
+    margin-top: 163px;
+  } */
   #double-label-slider.ui-slider .ui-slider-pip .ui-slider-label,
   #double-label-slider.ui-slider .ui-slider-pip .ui-slider-label i,
   #double-label-slider.ui-slider .ui-slider-pip .ui-slider-label span {

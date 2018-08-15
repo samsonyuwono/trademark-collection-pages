@@ -928,7 +928,7 @@ $('#Material ul li :checkbox').click(function() {
                     if (imageColor == swatchColor) {
 
                       var swatchSelectedImageSrc = $('img', this).attr('src');
-                      debugger;
+                      // debugger;
                       var swatchSelectedImageHref = $('a', this).attr('href');
 
                         /*
@@ -1419,7 +1419,7 @@ $('#Material ul li :checkbox').click(function() {
                      var swatchSelectedImageSrc = $('a', this).css('background-image').split(/"/)[1];
 
                      var productLink = "http://www.deltachildren.com" + $('a', this).attr('href');
-                     debugger;
+                     // debugger;
                        /*
                         once matched update main image shown for product on collection page according to swatch color
                         update image href and image title href to redirect to appropriate product page according to variant color
