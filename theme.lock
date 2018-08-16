@@ -126,9 +126,9 @@ assets/cocoa-258.png:
 assets/cocoa-with-beige-welt-911.png:
   development: 2018-08-06T17:31:04-04:00   9bb18b8dd11c6abefedad879c511f5d7
 assets/collection-filter.css:
-  development: 2018-08-15T18:00:53-04:00   e821bb61cffd92acc8917fb0efda5179
+  development: 2018-08-16T10:01:25-04:00   bedaf38522082f3237c8c3c754b3bef4
 assets/collection.css:
-  development: 2018-08-15T17:15:46-04:00   1dd3d29662b7f20e473388554fdace02
+  development: 2018-08-16T09:27:01-04:00   50291fa4acde458a3bd4a503dcc0b96e
 assets/collection.js:
   development: 2018-08-06T12:21:11-04:00   c3e3ec85d9059bae17180362ddc74421
 assets/cool-grey-063.png:
@@ -262,7 +262,7 @@ assets/mattress-el.css:
 assets/mattress-landing.css:
   development: 2018-08-15T11:05:19-04:00   e86129050126459525bfaa2e6bf6c8ac
 assets/mattress-nc.css:
-  development: 2018-08-15T15:04:15-04:00   554b17be074d433bd22037e6490c2991
+  development: 2018-08-16T08:47:03-04:00   7d5f0b31a92b7999dc6c3836bcd91309
 assets/merlot-615.png:
   development: 2018-08-06T17:34:06-04:00   be24976e84c660af47fb4e0a8d2fe900
 assets/midnight-cherry-613.png:
@@ -586,7 +586,7 @@ templates/cart.liquid:
 templates/cart.mini-cart.liquid:
   development: 2018-08-06T12:21:20-04:00   58536b1046229725b3ec330989d0de79
 templates/collection.liquid:
-  development: 2018-08-15T17:56:52-04:00   88c0b579197794d103fe2bf3907f9687
+  development: 2018-08-16T09:03:48-04:00   36029cbecd92695a7a50580a1bfcb25b
 templates/customers/account.liquid:
   development: 2018-08-06T12:21:20-04:00   45893842e1fb7c545212fe88324db094
 templates/customers/activate_account.liquid:

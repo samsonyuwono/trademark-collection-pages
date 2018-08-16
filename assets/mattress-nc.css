@@ -135,6 +135,9 @@
 }
 
 @media screen and (min-width: 1300px) {
+  #double-label-slider.ui-slider {
+    margin-top: 210px;
+  }
   #double-label-slider.ui-slider .ui-slider-pip .ui-slider-label h6 {
     font-size: 16px
   }

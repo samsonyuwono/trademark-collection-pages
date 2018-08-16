@@ -117,7 +117,7 @@
 }
 
 .product-item .product-item__image-wrapper{
-  max-width: 100% !important;
+  max-width: 95% !important;
 }
 .product-item .product-item__labels{
   font-family: 'Gotham Book';
