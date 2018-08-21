@@ -92,17 +92,16 @@
 .product-item__info .product-item__vendor{
   font-family: 'Gotham Book';
   color: #acacac;
-  font-size: 90%;
+  font-size: 70%;
   text-transform: initial;
   letter-spacing: 1.5px;
 }
 
 .product-item__info .product-item__title{
-  font-family: 'Gotham Book';
+  font-family: 'Gotham Bold';
   color: #8daadb;
-  font-size: 98%;
+  font-size: 88%;
   text-transform: initial;
-  letter-spacing: 1px;
   font-weight: 100;
 }
 .product-item__info .product-item__title a:hover{
@@ -113,11 +112,11 @@
 .product-item__info .product-item__price{
   font-family: 'Gotham Book';
   color: #555555;
-  font-size: 110%;
+  font-size: 88%;
 }
 
 .product-item .product-item__image-wrapper{
-  max-width: 95% !important;
+  max-width: 100% !important;
 }
 .product-item .product-item__labels{
   font-family: 'Gotham Book';

@@ -885,6 +885,7 @@ $('#Material ul li :checkbox').click(function() {
           //----- swatch functionality and dynamic product image update on collection page / dynamic href udpate  -----
 
           if ($(window).width() > 1024) {
+
             $('.filterSwatches div').each(function() {
 
               $(this).hover(function() {
@@ -910,6 +911,7 @@ $('#Material ul li :checkbox').click(function() {
                   var varImages = $('.varImages', articlesContainer);
 
                   $(varImages).each(function() {
+                    // debugger;
 
                     var varImageColor_id = $(this).attr('id');
 
@@ -928,7 +930,7 @@ $('#Material ul li :checkbox').click(function() {
                     if (imageColor == swatchColor) {
 
                       var swatchSelectedImageSrc = $('img', this).attr('src');
-                      // debugger;
+                      // debu
                       var swatchSelectedImageHref = $('a', this).attr('href');
 
                         /*
@@ -1399,6 +1401,8 @@ $('#Material ul li :checkbox').click(function() {
 
          });
           //for swatches on collections pages before filter
+
+
          $('.product-item__info ul li').each(function() {
              console.log("hit")
 
@@ -1407,25 +1411,25 @@ $('#Material ul li :checkbox').click(function() {
                  var url = $('a', this).css('background-image');
                   var swatchLink = url.split(/"/)[1];
                   var swatchColor = swatchLink.split("/")[11].split(".")[0].replace(/[0-9]/g, '').split("-").join(" ").replace(/\b\w/g, l => l.toUpperCase()).strip()
-                  // var productLink = "http://www.deltachildren.com/collection/cribs" + $('a', this).attr('href');
                   //from li
                   var imageColor = $(this).attr("title").replace(/\d+/g, '').replace(/[{()}]/g, '').strip()
 
                    // compare isolated image color from swatch with isolated image color from product title (taken from id)
                    if (imageColor == swatchColor) {
+                     var imageColorDefault= $(this).attr("title")
+                     var imgSrc = $('.image-wrap').find("[id= 'Bianca White (130)']").children().find('.imgHB').attr('src')
+                     // debugger;
 
                      var productContainer = $(this).parent().parent().parent();
-
-                     var swatchSelectedImageSrc = $('a', this).css('background-image').split(/"/)[1];
-
-                     var productLink = "http://www.deltachildren.com" + $('a', this).attr('href');
-                     // debugger;
+                     var swatchSelectedImageSrc = $('a', this).css('background-image').split(/"/)[1]; //only gets the swatch image, need the actual image link o
+                     var productLink = "http://www.deltachildren.com" + $('a', this).attr('href'); // this is the link for the product variant page
                        /*
                         once matched update main image shown for product on collection page according to swatch color
                         update image href and image title href to redirect to appropriate product page according to variant color
                        */
-                      $('.product-item__image', productContainer).attr('srcset', swatchSelectedImageSrc); //atattaches color swatches isntead of image. currently there is no link to a product image  associated with swatch
-                      $('product-item__link', productContainer).attr('href', productLink);
+                      $('.product-item__image', productContainer).attr('srcset', imgSrc); //attaches image for BiancaWhite 130 now
+                      // debugger;
+                      $('product-item__link', productContainer).attr('href', swatchSelectedImageSrc);
                       $('h3 a', productContainer).attr('href', productLink);
                    }
                  })

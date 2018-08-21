@@ -126,9 +126,9 @@ assets/cocoa-258.png:
 assets/cocoa-with-beige-welt-911.png:
   development: 2018-08-06T17:31:04-04:00   9bb18b8dd11c6abefedad879c511f5d7
 assets/collection-filter.css:
-  development: 2018-08-16T10:01:25-04:00   bedaf38522082f3237c8c3c754b3bef4
+  development: 2018-08-21T12:38:01-04:00   d12017947cf8206f6dc3598e611b7cbc
 assets/collection.css:
-  development: 2018-08-16T09:27:01-04:00   50291fa4acde458a3bd4a503dcc0b96e
+  development: 2018-08-21T12:24:41-04:00   84076f2238aa447b24913aa498936c21
 assets/collection.js:
   development: 2018-08-06T12:21:11-04:00   c3e3ec85d9059bae17180362ddc74421
 assets/cool-grey-063.png:
@@ -300,7 +300,7 @@ assets/product.css:
 assets/product.js:
   development: 2018-08-06T12:21:16-04:00   3d56381ae6f301a57ee1166d20fd3198
 assets/product_filter.js:
-  development: 2018-08-15T16:58:06-04:00   7fc96cea26062333d828f5f6b4cd8f7d
+  development: 2018-08-21T12:31:47-04:00   582a56bc16c96c6eec797493fd1538cc
 assets/purple.png:
   development: 2018-08-06T17:34:02-04:00   ed254131e22a3f826c10f69bcb79486c
 assets/rustic-bianca-170.png:
@@ -364,7 +364,7 @@ assets/sweet-grey-3101.png:
 assets/taupe-065.png:
   development: 2018-08-06T17:34:23-04:00   de570bb123eaf56d81d315db3369e2c6
 assets/theme.scss.liquid:
-  development: 2018-08-15T17:17:21-04:00   8c51ca89f0b99e93fb4fe34ef9fe5545
+  development: 2018-08-21T12:23:06-04:00   7440b0d7318e4defae055a2af81b0a1d
 assets/toast-velvet-932.png:
   development: 2018-08-06T17:34:24-04:00   a54738eaac1fd85bcefbe05eb572f100
 assets/touchPunch.js:
@@ -541,6 +541,8 @@ snippets/pagination-numbered.liquid:
   development: 2018-08-10T15:40:38-04:00   5a5de5d3ad90bcffc9cdf6ad91df8fb9
 snippets/pagination.liquid:
   development: 2018-08-06T12:21:19-04:00   ee6a54b7218e5e5264c90ce7a1419401
+snippets/panda-swatch.liquid:
+  development: 2018-08-16T11:56:20-04:00   c15895850fe475ac854ae8ecfb021805
 snippets/path-footer.liquid:
   development: 2018-08-06T12:21:19-04:00   08f6298ca83079904fec84657033fcfb
 snippets/pop-up-right-tab.liquid:
@@ -586,7 +588,7 @@ templates/cart.liquid:
 templates/cart.mini-cart.liquid:
   development: 2018-08-06T12:21:20-04:00   58536b1046229725b3ec330989d0de79
 templates/collection.liquid:
-  development: 2018-08-16T09:03:48-04:00   36029cbecd92695a7a50580a1bfcb25b
+  development: 2018-08-21T12:40:33-04:00   e34f8cc5776cfbdb69cf1dea2a477356
 templates/customers/account.liquid:
   development: 2018-08-06T12:21:20-04:00   45893842e1fb7c545212fe88324db094
 templates/customers/activate_account.liquid:
