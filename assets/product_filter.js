@@ -1417,7 +1417,7 @@ $('#Material ul li :checkbox').click(function() {
                    // compare isolated image color from swatch with isolated image color from product title (taken from id)
                    if (imageColor == swatchColor) {
                      var imageColorDefault= $(this).attr("title")
-                     var imgSrc = $('.image-wrap').find("[id= 'Bianca White (130)']").children().find('.imgHB').attr('src')
+                     var imgSrc = $('.image-wrap').find("[id= 'Antique Chestnut (2100)']").children().find('.imgHB').attr('src')
                      // debugger;
 
                      var productContainer = $(this).parent().parent().parent();

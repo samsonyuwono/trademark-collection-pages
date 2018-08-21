@@ -1,3 +1,61 @@
+@font-face{
+  font-family: 'Gotham Bold';
+  src:url('//cdn.shopify.com/s/files/1/0578/7201/files/gotham-bold.otf');
+}
+@font-face{
+  font-family: 'Gotham Black';
+  src:url('//cdn.shopify.com/s/files/1/0578/7201/files/gothicb.ttf');
+}
+@font-face{
+  font-family: 'Gotham Book';
+  src:url('//cdn.shopify.com/s/files/1/0578/7201/files/GOTHIC.TTF');
+}
+@font-face{
+  font-family: 'Helvetica Medium Condensed';
+  src: url('https://cdn.shopify.com/s/files/1/0578/7201/files/helvetica-neue-lt-std-67-medium-condensed.otf?9943094632125790425')
+}
+@font-face{
+  font-family: 'Cartoonist Kooky';
+  src:url('//cdn.shopify.com/s/files/1/0578/7201/files/gothicb.ttf');
+}
+@font-face{
+  font-family: 'Cartoonist Kooky';
+  src:url('//cdn.shopify.com/s/files/1/0578/7201/files/gothicb.ttf');
+}
+@font-face{
+  font-family: 'Gotham-Book';
+  src: url('//cdn.shopify.com/s/files/1/0578/7201/files/Gotham_Book.otf');
+}
+
+@font-face{
+  font-family: 'Century Gothic Bold';
+  src: url('//cdn.shopify.com/s/files/1/0578/7201/files/gothicb.ttf');
+}
+.gotham-medium{
+  font-family: 'Gotham Medium';
+}
+.gotham-bold{
+  font-family: 'Gotham Bold';
+}
+.gotham-black{
+  font-family: 'Gotham Black';
+}
+.ultra{
+  font-family: 'Gotham Ultra';
+}
+.gotham-book{
+  font-family: 'Gotham Book';
+}
+.gotham-e-light{
+  font-family: 'Gotham Extra Light';
+}
+.gotham-light{
+  font-family: 'Gotham Light';
+}
+.cartoonist{
+  font-family: 'Cartoonist Kooky' !important;
+}
+
 /**
  * SIDEBAR NAVIGATION
  */
@@ -5,18 +63,17 @@
 .sidenav-container {
     float: left;
     position: relative;
-    margin-right: 50px;
+    margin: 115px 20px 0 0;
     min-height: -webkit-fill-available;
     z-index: 1;
-  	background-color: #556d9b;
+  	background-color: #305292;
   	color: white;
   	font-family: 'Gotham Black';
-
 }
 
 .sidenav-header h1 {
- padding: 13px 82px 5px 19px;
- font-size: 46px;
+ padding: 13px 0px 5px 20px;
+ font-size: 29px;
  font-family: sans-serif;
  text-transform: uppercase;
  font-weight: lighter;
@@ -24,7 +81,7 @@
 
 
 .sidenav-container a {
-    font-size: 17px;
+    font-size: 13px;
 
     color: white;
   	text-align: left;
@@ -46,7 +103,7 @@
 }
 
 .sidenav-container ul ul a{
-    font-size: 14px;
+    font-size: 12px;
     color: #c5d1e6;
     border-bottom: none;
     padding: 0px 0px 0px 44px;
@@ -61,7 +118,7 @@
 
 @media (max-width: 800px){
   .sidenav-container {
-   display: none;
+   /* display: none; */
   }
 }
 

@@ -127,8 +127,8 @@ margin-right: 2px;
   border-top: none;
   position: relative;
   border: 1px solid darkgray;
-  bottom: 38px;
-  padding-top: 10px;
+  bottom: 28px;
+  padding-top: 3px;
   height: auto;
   width: auto;
   z-index: 9999;
@@ -136,7 +136,7 @@ margin-right: 2px;
   transition: opacity .4s ease-in-out;
   -moz-transition: opacity .4s ease-in-out;
   -webkit-transition: opacity .4s ease-in-out;
-  line-height: 18px;
+  line-height: 17px;
 }
 
 #filterList ul {
@@ -163,7 +163,7 @@ margin-right: 2px;
   position: relative;
   bottom: 5px;
   width: max-content;
-  font-size: 14px;
+  font-size: 12px;
   font-family: 'Gotham Book';
   /* border-bottom: 19px black; */
 
@@ -188,7 +188,7 @@ margin-right: 2px;
 }
 
 div#sort {
-  margin: 2% 12% 4% 11%;
+  margin: 2% 12% 4% 15%;
   display: flex;
   flex-direction: row;
   white-space: nowrap;
@@ -344,8 +344,8 @@ div.hero_image{
 #customLoader {
   position: relative;
   /*color:*/
-  left: 27%;
-  bottom: 5px;
+  left: 31%;
+  bottom: 6px;
   width: 25px;
   height: 25px;
   z-index: 99999;
@@ -357,8 +357,8 @@ div.hero_image{
 #sort-by {
   background-color: white;
   padding: 12px;
-  width: 203px;
-  height: 32px;
+  width: 192px;
+  height: 27px;
   border: 1px solid rgba(161,161,166,0.4);
   font-size: 14px;
   font-family: 'Gotham Light';
