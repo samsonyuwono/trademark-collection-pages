@@ -1,22 +1,62 @@
 {{ 'sidebar.css' | asset_url | stylesheet_tag }}
 
+
  <div class="sidenav-container">
   <div class="sidenav-header">
  	<h1>{{collection.title}}</h1>
   </div>
-  	<nav class="navigation">
       <ul class="mainmenu">
-        {%- for link in linklists.side-navigation.links -%}
-        <li><a href="{{link.url}}">{{ link.title | escape }}</a>
-        {% if linklists[link.handle].links.size > 0 %}
-        <ul>
+        {% for link in linklists.side-navigation.links %}
+          {% include 'nav-item-class' %}
+          {% capture handle %}{{ link.title | handle }}{% endcapture %}
+
+        <li class="{{item_class}} has-dropdown main" id="{{page.handle | handleize}}{{collection.handle | handleize}}">
+          <a class="nav-title head" href="{{link.url}}">{{ link.title | escape }}<span class="up"></span><span class="down"></span></a>
+          {% if  linklists[handle] and linklists[handle].links.size > 0 %}
+        <ul class="dropdown">
           {% for sublink in linklists.[link.handle].links %}
-          <li><a href="{{ sublink.url }}">{{ sublink.title | escape }}</a></li>
+            {% include 'nav-item-class' %}
+            {% capture handle %}{{ link.title | handle }}{% endcapture %}
+          <li class="{{item_class}} has-dropdown" id="level-2">
+            <a class="hasDropdown" href="{{ sublink.url }}">{{ sublink.title | escape }}</a></li>
           {% endfor %}
         </ul>
-        {% endif %}
-        </li>
-        {% endfor %}
-      </ul>
-    </nav>
+      {% endif %}
+    </li>
+    {% endfor %}
+  </ul>
+
 </div>
+
+<script>
+// makes Sale in Top Header red
+// $("li.nav-item a:contains('Sale')").css('color', 'red');
+// $("li.nav-item a:contains('Sale')").css('border-bottom', 'white');
+
+$('.mainmenu a.head').each(function(){
+  $(this).click(function(e){
+    e.preventDefault();
+  });
+});
+
+$( document ).ready(function() {
+  //appends arrows to nav items with dropdowns
+  $('.mainmenu a').each(function(){
+    $("<i class='arrow'></i>").appendTo(this);
+  });
+
+//on click slide dropdown down, flip arrow, and hide all other main categories
+  $('.mainmenu a').click(function(){
+    $(this).siblings('.dropdown').slideToggle();
+    $(this).children('.arrow').toggleClass('arrow-up title-active-arrow');
+    $(this).toggleClass('title-active');
+    if($(this).siblings('.dropdown').children().hasClass('active')){
+      $(this).parent().siblings().hide();
+    }
+  });
+  // on page load, looks for active class in nav-item and initiates click on parent to show dropdown and hide all other categories
+  $('.mainmenu ul.dropdown li.nav-item.active').parent().prev().click();
+
+});
+
+</script>

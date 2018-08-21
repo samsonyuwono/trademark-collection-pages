@@ -59,7 +59,9 @@
 /**
  * SIDEBAR NAVIGATION
  */
-
+ .sidenav-container ul.dropdown{
+   display: none;
+ }
 .sidenav-container {
     float: left;
     position: relative;
