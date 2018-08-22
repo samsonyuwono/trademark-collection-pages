@@ -1410,14 +1410,15 @@ $('#Material ul li :checkbox').click(function() {
                   var swatchLink = url.split(/"/)[1];
                   var swatchColor = swatchLink.split("/")[11].split(".")[0].replace(/[0-9]/g, '').split("-").join(" ").replace(/\b\w/g, l => l.toUpperCase()).strip()
                   //from li
-                  var imageColor = $(this).attr("title").replace(/\d+/g, '').replace(/[{()}]/g, '').strip()
+                  var imageColor = $(this).attr("title").replace(/\d+/g, '').replace(/[{()}]/g, '').strip();
 
                    // compare isolated image color from swatch with isolated image color from product title (taken from id)
                    if (imageColor == swatchColor) {
                      var imageColorDefault= $(this).attr("title")
-                     alert(imageColorDefault)
+                     // alert(imageColorDefault)
                      var imgSrc = $('.image-wrap').find("[id= 'Antique Chestnut (2100)']").children().find('.imgHB').attr('src')
                        // $('.image-wrap').find($("[id="+imageColorDefault+"]")).children().find('.imgHB').attr('src')
+                       // $(imageColorDefault).children().find('.imgHB').attr('src')
                      debugger;
 
                      var productContainer = $(this).parent().parent().parent();

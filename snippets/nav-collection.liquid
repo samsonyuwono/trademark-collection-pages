@@ -35,13 +35,19 @@
 
 <script>
 // makes Sale in Top Header red
-$("li.nav-item a:contains('Sale')").css('color', 'red');
-$("li.nav-item a:contains('Sale')").css('border-bottom', 'white');
+// $("li.nav-item a:contains('Sale')").css('color', 'red');
+// $("li.nav-item a:contains('Sale')").css('border-bottom', 'white');
 //hides duplicate menu items
 $("li.main a:contains('Storage & Décor')").hide()
 $("li.main a:contains('Strollers')").hide()
 $("li.main a:contains('Sale')").hide()
 
+
+$('.mainmenu a.head').click(function(){
+  console.log("working")
+  // debugger;
+  //add class then use css to highlight it
+});
 
 $('.mainmenu a.head').each(function(){
   $(this).click(function(e){
@@ -49,14 +55,17 @@ $('.mainmenu a.head').each(function(){
   });
 });
 
+
 $( document ).ready(function() {
+
   //appends arrows to nav items with dropdowns
-  $('.mainmenu a').each(function(){
+  $('.mainmenu a.head').each(function(){
     $("<i class='arrow'></i>").appendTo(this);
   });
 
 //on click slide dropdown down, flip arrow, and hide all other main categories
   $('.mainmenu a').click(function(){
+    console.log(this)
     $(this).siblings('.dropdown').slideToggle();
     $(this).children('.arrow').toggleClass('arrow-up title-active-arrow');
     $(this).toggleClass('title-active');

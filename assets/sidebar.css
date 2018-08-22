@@ -8,7 +8,7 @@
 }
 @font-face{
   font-family: 'Gotham Book';
-  src:url('//cdn.shopify.com/s/files/1/0578/7201/files/GOTHIC.TTF');
+  src: url('//cdn.shopify.com/s/files/1/0578/7201/files/Gotham_Book.otf');
 }
 @font-face{
   font-family: 'Helvetica Medium Condensed';
@@ -60,27 +60,25 @@
  * SIDEBAR NAVIGATION
  */
 
- .nav-title-head a[href="/pages/sales"]{
-   display: none;
- }
  .sidenav-container ul.dropdown{
    display: none;
  }
 .sidenav-container {
     float: left;
     position: relative;
-    margin: 115px 20px 0 0;
+    margin: 115px -2px 0 0;
     min-height: -webkit-fill-available;
     z-index: 1;
-  	background-color: #305292;
+  	background-color: #435c90;
   	color: white;
-  	font-family: 'Gotham Black';
+  	font-family: 'Gotham Bold';
+    max-width: 196px;
 }
 
 .sidenav-header h1 {
- padding: 13px 0px 5px 20px;
+ padding: 13px 0px 8px 14px;
  font-size: 29px;
- font-family: sans-serif;
+ font-family: 'Century Gothic';
  text-transform: uppercase;
  font-weight: lighter;
 }
@@ -88,7 +86,6 @@
 
 .sidenav-container a {
     font-size: 13px;
-
     color: white;
   	text-align: left;
     display: block;
@@ -103,28 +100,39 @@
 
 .sidenav-container ul ul{
   	list-style:none;
-  	background-color: #60759c;
+  	background-color: #576e9a;
   	border-bottom: 1px groove;
-    line-height: 28px;
+    line-height: 20px;
 }
 
 .sidenav-container ul ul a{
-    font-size: 12px;
-    color: #c5d1e6;
+    font-size: 11px;
+    color: #a4badc;
     border-bottom: none;
-    padding: 0px 0px 0px 44px;
-    font-family: sans-serif;
+    padding: 2px 0px 1px 29px;
+    font-family: 'Gotham Book';
 }
 
 
 .sidenav-container a:hover {
     background-color: white;
   	color: #0e2f63;
+    font-family: 'Gotham Bold';
+    display: block;
 }
+
+.sidenav-container a:hover {
+    background-color: white;
+  	color: #0e2f63;
+    font-family: 'Gotham Bold';
+    display: block;
+}
+
+.dropdown-
 
 @media (max-width: 800px){
   .sidenav-container {
-   /* display: none; */
+   display: none;
   }
 }
 
@@ -241,6 +249,44 @@
 .sidebar-nav .social-media {
   margin: 18px 0 42px 0;
 }
+
+.sidenav-container .title-active {
+  background-color: white;
+  color: #0e2f63;
+}
+
+.sidenav-container ul.dropdown .title-active{
+  display: block;
+}
+
+.sidenav-container i.arrow {
+    border: solid #8dabdd;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    left: 20px;
+    position: relative;
+}
+
+.sidenav-container .title-active-arrow {
+    border-color: #003366 !important;
+}
+
+.sidenav-container .arrow-up {
+    transform: rotate(-135deg) !important;
+    -webkit-transform: rotate(-135deg) !important;
+}
+
+.sidenav-container .title-active{
+  color: #003366 !important;
+}
+.sidenav-container .title-active-arrow{
+    border-color: #003366 !important;
+  }
+
+
 
 @include av-mq('handheld-and-up') {
   .sidebar-nav {

@@ -26,3 +26,11 @@
 {% if forloop.last %}
   {% assign item_class = item_class | append: ' last' %}
 {% endif %}
+
+{% if current %}
+  {% assign item_class = item_class | append: ' active' %}
+{% endif %}
+
+{% if current == {{collection.title}} %}
+  {% assign item_class = item_class | append: ' active' %}
+{% endif %}
