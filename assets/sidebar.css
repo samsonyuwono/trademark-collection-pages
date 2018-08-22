@@ -121,14 +121,6 @@
     display: block;
 }
 
-.sidenav-container a:hover {
-    background-color: white;
-  	color: #0e2f63;
-    font-family: 'Gotham Bold';
-    display: block;
-}
-
-.dropdown-
 
 @media (max-width: 800px){
   .sidenav-container {
@@ -257,6 +249,7 @@
 
 .sidenav-container ul.dropdown .title-active{
   display: block;
+  font-family: 'Gotham Bold';
 }
 
 .sidenav-container i.arrow {
@@ -284,6 +277,18 @@
 }
 .sidenav-container .title-active-arrow{
     border-color: #003366 !important;
+  }
+
+  .sidenav-container .active {
+    background-color: white;
+  }
+
+  .sidenav-container .active a {
+    color: #003366 !important;
+  }
+
+  .sidenav-container .active ul.dropdown {
+    display: block;
   }
 
 
