@@ -1404,8 +1404,6 @@ $('#Material ul li :checkbox').click(function() {
 
 
          $('.product-item__info ul li').each(function() {
-             console.log("hit")
-
              $(this).hover(function() {
                //from swatch
                  var url = $('a', this).css('background-image');
@@ -1417,8 +1415,10 @@ $('#Material ul li :checkbox').click(function() {
                    // compare isolated image color from swatch with isolated image color from product title (taken from id)
                    if (imageColor == swatchColor) {
                      var imageColorDefault= $(this).attr("title")
+                     alert(imageColorDefault)
                      var imgSrc = $('.image-wrap').find("[id= 'Antique Chestnut (2100)']").children().find('.imgHB').attr('src')
-                     // debugger;
+                       // $('.image-wrap').find($("[id="+imageColorDefault+"]")).children().find('.imgHB').attr('src')
+                     debugger;
 
                      var productContainer = $(this).parent().parent().parent();
                      var swatchSelectedImageSrc = $('a', this).css('background-image').split(/"/)[1]; //only gets the swatch image, need the actual image link o

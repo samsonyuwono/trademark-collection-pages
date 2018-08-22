@@ -10,9 +10,10 @@
           {% include 'nav-item-class' %}
           {% capture handle %}{{ link.title | handle }}{% endcapture %}
 
+
         <li class="{{item_class}} has-dropdown main" id="{{page.handle | handleize}}{{collection.handle | handleize}}">
           <a class="nav-title head" href="{{link.url}}">{{ link.title | escape }}<span class="up"></span><span class="down"></span></a>
-          {% if  linklists[handle] and linklists[handle].links.size > 0 %}
+          {% if  linklists[handle] and linklists[handle].links.size > 1 %}
         <ul class="dropdown">
           {% for sublink in linklists.[link.handle].links %}
             {% include 'nav-item-class' %}
@@ -21,6 +22,10 @@
             <a class="hasDropdown" href="{{ sublink.url }}">{{ sublink.title | escape }}</a></li>
           {% endfor %}
         </ul>
+        {% else %}
+       <li class="{{item_class}} alone">
+        <a href="{{ link.url }}">{{ link.title }}</a>
+      </li>
       {% endif %}
     </li>
     {% endfor %}
@@ -30,8 +35,13 @@
 
 <script>
 // makes Sale in Top Header red
-// $("li.nav-item a:contains('Sale')").css('color', 'red');
-// $("li.nav-item a:contains('Sale')").css('border-bottom', 'white');
+$("li.nav-item a:contains('Sale')").css('color', 'red');
+$("li.nav-item a:contains('Sale')").css('border-bottom', 'white');
+//hides duplicate menu items
+$("li.main a:contains('Storage & Décor')").hide()
+$("li.main a:contains('Strollers')").hide()
+$("li.main a:contains('Sale')").hide()
+
 
 $('.mainmenu a.head').each(function(){
   $(this).click(function(e){

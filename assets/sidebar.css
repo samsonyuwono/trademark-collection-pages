@@ -59,6 +59,10 @@
 /**
  * SIDEBAR NAVIGATION
  */
+
+ .nav-title-head a[href="/pages/sales"]{
+   display: none;
+ }
  .sidenav-container ul.dropdown{
    display: none;
  }
