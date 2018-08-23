@@ -72,12 +72,13 @@
   	background-color: #435c90;
   	color: white;
   	font-family: 'Gotham Bold';
-    max-width: 209px;
+    max-width: 226px;
+    padding-bottom: 284%;
 }
 
 .sidenav-header h1 {
  padding: 13px 0px 8px 14px;
- font-size: 25px;
+ font-size: 28px;
  font-family: 'Gotham Book';
  text-transform: uppercase;
  font-weight: lighter;

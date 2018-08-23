@@ -1416,10 +1416,10 @@ $('#Material ul li :checkbox').click(function() {
                    if (imageColor == swatchColor) {
                      var imageColorDefault= $(this).attr("title")
                      // alert(imageColorDefault)
-                     var imgSrc = $('.image-wrap').find("[id= 'Antique Chestnut (2100)']").children().find('.imgHB').attr('src')
-                       // $('.image-wrap').find($("[id="+imageColorDefault+"]")).children().find('.imgHB').attr('src')
+                     var imgSrc = $(document.getElementById(imageColorDefault)).children().find('.imgHB').attr('src')
+                       // $('.image-wrap').find($("div[id="+imageColorDefault+"]")).children().find('.imgHB').attr('src')
                        // $(imageColorDefault).children().find('.imgHB').attr('src')
-                     debugger;
+                     // debugger;
 
                      var productContainer = $(this).parent().parent().parent();
                      var swatchSelectedImageSrc = $('a', this).css('background-image').split(/"/)[1]; //only gets the swatch image, need the actual image link o
