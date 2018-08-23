@@ -1400,8 +1400,8 @@ $('#Material ul li :checkbox').click(function() {
            }
 
          });
-          //for swatches on collections pages before filter
 
+          //changes swatches on collections pages before filter
 
          $('.product-item__info ul li').each(function() {
              $(this).hover(function() {
@@ -1415,12 +1415,7 @@ $('#Material ul li :checkbox').click(function() {
                    // compare isolated image color from swatch with isolated image color from product title (taken from id)
                    if (imageColor == swatchColor) {
                      var imageColorDefault= $(this).attr("title")
-                     // alert(imageColorDefault)
                      var imgSrc = $(document.getElementById(imageColorDefault)).children().find('.imgHB').attr('src')
-                       // $('.image-wrap').find($("div[id="+imageColorDefault+"]")).children().find('.imgHB').attr('src')
-                       // $(imageColorDefault).children().find('.imgHB').attr('src')
-                     // debugger;
-
                      var productContainer = $(this).parent().parent().parent();
                      var swatchSelectedImageSrc = $('a', this).css('background-image').split(/"/)[1]; //only gets the swatch image, need the actual image link o
                      var productLink = "http://www.deltachildren.com" + $('a', this).attr('href'); // this is the link for the product variant page
