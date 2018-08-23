@@ -43,12 +43,6 @@ $("li.main a:contains('Storage & Décor')").hide()
 $("li.main a:contains('Strollers')").hide()
 $("li.main a:contains('Sale')").hide()
 
-$('.mainmenu a.head').click(function(){
-  console.log("working")
-  // debugger;
-  //add class then use css to highlight it
-});
-
 $('.mainmenu a.head').each(function(){
   $(this).click(function(e){
     e.preventDefault();
@@ -56,24 +50,19 @@ $('.mainmenu a.head').each(function(){
 });
 
 $( document ).ready(function() {
+  //adds active class to header of selected section
   $('.mainmenu a').each(function(){
     if(this.href == document.location){
       $(this).addClass('title-active')
-
     }
   })
-
   //appends arrows to nav items with dropdowns
-
   $('.mainmenu a.head').each(function(){
     $("<i class='arrow'></i>").appendTo(this);
     if(this.href == document.location){
-      console.log(this.parent())
       $(this).addClass('active') //adds class to current sub menu
-      // $(this).addClass('active').closest('ul').parent().addClass('active');
     }
   })
-
 //opens current section on dropdown menu
   $('.mainmenu a').filter(function(){
     return $(this).attr('href') == location.pathname
@@ -81,13 +70,9 @@ $( document ).ready(function() {
 
 //on click slide dropdown down, flip arrow, and hide all other main categories
   $('.mainmenu a').click(function(){
-    console.log(this)
     $(this).siblings('.dropdown').slideToggle();
     $(this).children('.arrow').toggleClass('arrow-up title-active-arrow');
     $(this).toggleClass('title-active'); //this gives the active class
-    if($(this).siblings('.dropdown').children().hasClass('active')){
-      $(this).parent().siblings().hide();
-    }
   });
   // on page load, looks for active class in nav-item and initiates click on parent to show dropdown and hide all other categories
   $('.mainmenu ul.dropdown li.nav-item.active').parent().prev().click();

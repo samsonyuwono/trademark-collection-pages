@@ -83,6 +83,7 @@ ul#collectionGrid{
   font-family: 'Gotham Medium';
   text-transform: uppercase;
 }
+
 #collectionGrid .details{
  margin-top: 15px !important;
 }
@@ -94,7 +95,7 @@ ul#collectionGrid{
   /*width: auto;*/
   height: 100%;
   line-height: normal;
-letter-spacing: 0.8px;
+  letter-spacing: 0.8px;
 }
 
 form.js-collection-filter h6 {
@@ -188,7 +189,7 @@ margin-right: 2px;
 }
 
 div#sort {
-  margin: 2% 12% 4% 9%;
+  margin: 2% 12% 4% 46%;
   display: flex;
   flex-direction: row;
   white-space: nowrap;
@@ -388,11 +389,43 @@ transition: all .15s;
   }
 
 }
-
 @media screen and (min-width: 1024px){
 .product-container{
   min-width: 25%;
   display: flex;
+  }
+  div#sort{
+    margin: 2% 12% 4% 7%;
+  }
+}
+
+@media screen and (min-width: 1300px){
+  div#sort{
+    margin: 2% 12% 4% 34%;
+  }
+}
+
+@media screen and (min-width: 1600px){
+  div#sort{
+    margin: 2% 12% 4% 60%;
+  }
+}
+
+@media screen and (min-width: 1900px){
+  div#sort{
+    margin: 2% 12% 4% 70%;
+  }
+}
+
+/* @media screen and (min-width: 2000px){
+  div#sort{
+    margin: 2% 12% 4% 80%;
+  }
+} */
+
+@media screen and (min-width: 2200px){
+  div#sort{
+    margin: 2% 12% 4% 90%;
   }
 }
 

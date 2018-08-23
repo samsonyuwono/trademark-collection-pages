@@ -60,9 +60,9 @@
  * SIDEBAR NAVIGATION
  */
 
- .sidenav-container ul.dropdown{
+.sidenav-container ul.dropdown{
    display: none;
- }
+}
 .sidenav-container {
     float: left;
     position: relative;
@@ -72,13 +72,13 @@
   	background-color: #435c90;
   	color: white;
   	font-family: 'Gotham Bold';
-    max-width: 196px;
+    max-width: 209px;
 }
 
 .sidenav-header h1 {
  padding: 13px 0px 8px 14px;
- font-size: 29px;
- font-family: 'Century Gothic';
+ font-size: 25px;
+ font-family: 'Gotham Book';
  text-transform: uppercase;
  font-weight: lighter;
 }
@@ -120,6 +120,8 @@
     font-family: 'Gotham Bold';
     display: block;
 }
+
+
 
 
 @media (max-width: 800px){
@@ -279,12 +281,18 @@
     border-color: #003366 !important;
   }
 
+  .hasDropdown {
+    color: #a4badc;
+  }
+
   .sidenav-container .active {
     background-color: white;
   }
 
-  .sidenav-container .active a {
-    color: #003366 !important;
+  .mainmenu
+
+  .active a.head {
+    color: #003366;
   }
 
   .sidenav-container .active ul.dropdown {
