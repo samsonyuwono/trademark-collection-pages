@@ -77,8 +77,8 @@
 }
 
 .sidenav-header h1 {
- padding: 13px 0px 8px 14px;
- font-size: 28px;
+ padding: 22px 0px 14px 14px;
+ font-size: 33px;
  font-family: 'Gotham Book';
  text-transform: uppercase;
  font-weight: lighter;
@@ -86,7 +86,7 @@
 
 
 .sidenav-container a {
-    font-size: 13px;
+    font-size: 15px;
     color: white;
   	text-align: left;
     display: block;

@@ -91,8 +91,7 @@ ul#collectionGrid{
 
 .js-collection-filter{
   cursor: pointer;
-  padding: 2%;
-  /*width: auto;*/
+  padding: 16px;
   height: 100%;
   line-height: normal;
   letter-spacing: 0.8px;
@@ -103,7 +102,7 @@ form.js-collection-filter h6 {
   padding: 8px;
   width: 160px;
   height: 27px;
-  font-size: 11px;
+  font-size: 13px;
   background-color: lightsteelblue;
   font-weight: 600;
   font-family: 'Gotham Light';
@@ -211,9 +210,7 @@ div#sort {
  	 flex: 1 0 calc(20% - 10px);
    box-sizing: border-box;
    padding: 10px;
- 	 margin-left: 10px;
-   margin-bottom: 16px;
- 	 /* margin-top: 10px; */
+ 	 margin: 0 0 16px 10px;
    position: relative;
    top: 41px;
   }
@@ -291,6 +288,7 @@ text-align: center;
 ul#append {
   background-color: white;
   padding-top: 6%;
+  padding-left: 16px;
 }
 
 /*for iPads, etc. */
@@ -385,14 +383,13 @@ transition: all .15s;
     min-width: 33.33333%;
   }
   div#sort{
-    margin: 2% 12% 4% 9%;
+    margin: 2% 12% 4% 0%;
   }
-
 }
 @media screen and (min-width: 1024px){
 .product-container{
   min-width: 25%;
-  display: flex;
+  display: inline-flex;
   }
   div#sort{
     margin: 2% 12% 4% 7%;

@@ -3,15 +3,20 @@
 
  <div class="sidenav-container">
   <div class="sidenav-header">
- 	<h1> {{collection.title}}</h1>
+    {% comment %}
+    {% shrinks Toy Storage & Bookshelves collection title to fit onto left side navbar%}
+    {% endcomment %}
+    {% if {{collection.title}} == "Toy Storage & Bookshelves" %}
+ 	    <h1 style="font-size: 27px;">{{collection.title}}</h1>
+      {%else%}
+      <h1>{{collection.title}}</h1>
+    {% endif %}
   </div>
+
       <ul class="mainmenu">
         {% for link in linklists.side-navigation.links %}
           {% include 'nav-item-class' %}
           {% capture handle %}{{ link.title | handle }}{% endcapture %}
-
-
-
         <li class="{{item_class}} has-dropdown main" id="{{page.handle | handleize}}{{collection.handle | handleize}}">
           <a class="nav-title head" href="{{link.url}}">{{ link.title | escape }}<span class="up"></span><span class="down"></span></a>
           {% if  linklists[handle] and linklists[handle].links.size > 1 %}
@@ -31,7 +36,6 @@
     </li>
     {% endfor %}
   </ul>
-
 </div>
 
 <script>
