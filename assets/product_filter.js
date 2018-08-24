@@ -911,7 +911,6 @@ $('#Material ul li :checkbox').click(function() {
                   var varImages = $('.varImages', articlesContainer);
 
                   $(varImages).each(function() {
-                    // debugger;
 
                     var varImageColor_id = $(this).attr('id');
 
@@ -1414,19 +1413,16 @@ $('#Material ul li :checkbox').click(function() {
 
                    // compare isolated image color from swatch with isolated image color from product title (taken from id)
                    if (imageColor == swatchColor) {
-                     var imageColorDefault= $(this).attr("title")
-                     var imgSrc = $(document.getElementById(imageColorDefault)).children().find('.imgHB').attr('src')
+                     var productLink = "http://www.deltachildren.com" + $('a', this).attr('href'); // use this variable in varImageSrc
+                     var productVariantHref = "https://www.deltachildren.com" + $(this).find('a').attr('href');
+                     var varImageSrc =$("a[href='"+productVariantHref+"']").find('.imgHB').attr('src')  // finds specific variant and then the src for it
+
                      var productContainer = $(this).parent().parent().parent();
-                     var swatchSelectedImageSrc = $('a', this).css('background-image').split(/"/)[1]; //only gets the swatch image, need the actual image link o
-                     var productLink = "http://www.deltachildren.com" + $('a', this).attr('href'); // this is the link for the product variant page
-                       /*
-                        once matched update main image shown for product on collection page according to swatch color
-                        update image href and image title href to redirect to appropriate product page according to variant color
-                       */
-                      $('.product-item__image', productContainer).attr('srcset', imgSrc); //attaches image for BiancaWhite 130 now
-                      // debugger;
+                     var swatchSelectedImageSrc = $('a', this).css('background-image').split(/"/)[1];
+
+                      $('.product-item__image', productContainer).attr('srcset', varImageSrc);
                       $('product-item__link', productContainer).attr('href', swatchSelectedImageSrc);
-                      $('h3 a', productContainer).attr('href', productLink);
+                      $('h3 a', productContainer).attr('href', productVariantHref);
                    }
                  })
                })
