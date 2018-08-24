@@ -4,7 +4,6 @@
 <!-- swatchesfiltered used to be here
  -->
 {{ 'handlebars-v4.0.5.js' | asset_url | script_tag }}
-{%include "nav-collection"%}
 
 <style>
 
@@ -203,9 +202,13 @@ ul#collectionGrid{
 </div> -->
 {% endif %}
 
-{% if collection.handle == 'guardrails' or collection.handle == "full-size-bed-rails"%}
+{% if collection.handle != 'guardrails' %}
+  {% include "nav-collection" %}
+  {% endif %}
+
+{% if collection.handle == 'guardrails' or collection.handle == 'full-size-bed-rails' %}
   {% include 'guardrail-data-tables' %}
-  {%endif%}
+{%endif%}
 
 <div class="hero_img_holder" id={{collection.handle}}>
   <div class="hero_image">

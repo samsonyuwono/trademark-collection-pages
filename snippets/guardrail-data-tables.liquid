@@ -1,8 +1,4 @@
-<link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.16/css/jquery.dataTables.css">
 <style>
-
-
-
 /*Global Styles*/
 @font-face{
   font-family: 'Gotham Black';
@@ -91,6 +87,7 @@
 }
 
   #banner-img-search video{
+    margin-top: 121px;
     width: 960px;
   }
 #banner-img-search #search-feature-title{
@@ -104,8 +101,8 @@
 #banner-img-search input.crib-input{
   position: absolute;
   top: 85%;
-  width: 35%;
-  left: 40%;
+  width: 25%;
+  left: 42%;
   height: 30px;
   font-family: "Gotham Light";
   color: #124660 !important;
@@ -122,8 +119,8 @@
 #banner-img-search input.guardrail-input{
   position: absolute;
   top: 91%;
-  width: 35%;
-  left: 40%;
+  width: 25%;
+  left: 42%;
   height: 30px;
   font-family: "Gotham Light";
   color: #124660 !important;
@@ -318,13 +315,13 @@
 #know-crib{
   position: absolute;
   top: 84.5%;
-  left: 18%;
+  left: 34%;
   color: #124660 !important;
 }
 #guardrail-name{
   position: absolute;
   top: 90.5%;
-  left: 18%;
+  left: 33%;
   color: #124660 !important;
 }
 #crib-or{
@@ -335,11 +332,44 @@
   color: #124660 !important;
 }
 
+@media screen and (max-width: 2000px) {
+  #know-crib{
+    font-size: 100%;
+    top: 85%;
+    left: 33%;
+  }
+  #guardrail-name {
+    top: 91%;
+    left: 32%;
+  }
+}
+
+@media screen and (max-width: 1800px) {
+  #know-crib{
+    left: 31%;
+  }
+  #guardrail-name {
+    left: 30%;
+  }
+
+  #banner-img-search input.crib-input {
+    width: 26%;
+    left: 45%;
+  }
+
+  #banner-img-search input.guardrail-input {
+    width: 26%;
+    left: 45%;
+  }
+}
+
+
+
 @media screen and (max-width: 1230px) {
   #know-crib{
     font-size: 100%;
     top: 81%;
-    left: 23%;
+    left: 24%;
 
   }
   #guardrail-name{

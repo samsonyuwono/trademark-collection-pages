@@ -4,10 +4,12 @@
  <div class="sidenav-container">
   <div class="sidenav-header">
     {% comment %}
-    {% shrinks Toy Storage & Bookshelves collection title to fit onto left side navbar%}
+    {% shrinks Toy Storage & Bookshelves and Headboards collection title to fit onto left side navbar%}
     {% endcomment %}
     {% if {{collection.title}} == "Toy Storage & Bookshelves" %}
  	    <h1 style="font-size: 27px;">{{collection.title}}</h1>
+      {% elsif {{collection.title}} == "Headboards" %}
+       <h1 style="font-size: 28px;">{{collection.title}}</h1>
       {%else%}
       <h1>{{collection.title}}</h1>
     {% endif %}
@@ -54,24 +56,42 @@ $('.mainmenu a.head').each(function(){
 });
 
 $( document ).ready(function() {
+  addClassToHeader();
+  addArrowToHeader();
+  openSelectedSection();
+  hideSideBar();
   //adds active class to header of selected section
+  function addClassToHeader(){
   $('.mainmenu a').each(function(){
     if(this.href == document.location){
       $(this).addClass('title-active')
     }
   })
+}
+//end addClassToHeader()
   //appends arrows to nav items with dropdowns
+  function addArrowToHeader(){
   $('.mainmenu a.head').each(function(){
     $("<i class='arrow'></i>").appendTo(this);
     if(this.href == document.location){
       $(this).addClass('active') //adds class to current sub menu
     }
   })
+}
+//end addArrowToHeader()
 //opens current section on dropdown menu
+function openSelectedSection(){
   $('.mainmenu a').filter(function(){
     return $(this).attr('href') == location.pathname
     }).addClass('active').closest('ul').parent().addClass('active');
+  }
+//end openSelectedSection()
 
+function hideSideBar(){
+  if(window.location.pathname === "/collections/guardrails" || window.location.pathname === "/collections/full-size-bed-rails"){
+    $('.sidenav-container').hide()
+  }
+}
 //on click slide dropdown down, flip arrow, and hide all other main categories
   $('.mainmenu a').click(function(){
     $(this).siblings('.dropdown').slideToggle();
@@ -80,7 +100,6 @@ $( document ).ready(function() {
   });
   // on page load, looks for active class in nav-item and initiates click on parent to show dropdown and hide all other categories
   $('.mainmenu ul.dropdown li.nav-item.active').parent().prev().click();
-
 });
 
 </script>
