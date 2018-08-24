@@ -1,3 +1,5 @@
+<!-- <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.16/css/jquery.dataTables.css"> -->
+
 <style>
 /*Global Styles*/
 @font-face{
@@ -88,7 +90,8 @@
 
   #banner-img-search video{
     margin-top: 121px;
-    width: 960px;
+    /* width: 960px; */
+    width: 1200px;
   }
 #banner-img-search #search-feature-title{
   position: absolute;
@@ -254,6 +257,7 @@
   display: none;
 }
 #only-guardrails-table tbody tr td{
+  color: #8daadb;
   display: inline-block;
   background-color: white;
 }
@@ -314,13 +318,13 @@
 
 #know-crib{
   position: absolute;
-  top: 84.5%;
+  top: 85.5%;
   left: 34%;
   color: #124660 !important;
 }
 #guardrail-name{
   position: absolute;
-  top: 90.5%;
+  top: 91.5%;
   left: 33%;
   color: #124660 !important;
 }
@@ -575,21 +579,22 @@ $(document).ready(function() {
     $('#guardrails-table_info').insertBefore('#guardrails-table');
   }
 
+//hides page when something is typed into search bar
   function startType(){
     $('#guardrails-table_filter input').keyup(function(){
       if($(this).val() == ''){
         $('table#guardrails-table').hide();
         $('#guardrails-table_info').hide();
-        $('.products.cards').show();
-        $('.pagination-wrap').show();
+        $('.product-item').show();
+        $('.pagination').show();
         $('#only-guardrails-table_filter').show();
         $('#only-bedrail-table_filter').show();
 
       }else{
         $('table#guardrails-table').show();
         $('#guardrails-table_info').show();
-        $('.products.cards').hide();
-        $('.pagination-wrap').hide();
+        $('.product-item').hide();
+        $('.pagination').hide();
         $('#only-guardrails-table_filter').hide();
         $('#only-bedrail-table_filter').hide();
 
@@ -602,14 +607,14 @@ $(document).ready(function() {
       if($(this).val() == ''){
         $('table#only-guardrails-table').hide();
         $('#only-guardrails-table_info').hide();
-        $('.products.cards').show();
-        $('.pagination-wrap').show();
+        $('.product-item').show();
+        $('.pagination').show();
         $('#guardrails-table_filter').show();
       }else{
         $('table#only-guardrails-table').show();
         $('#only-guardrails-table_info').show();
-        $('.products.cards').hide();
-        $('.pagination-wrap').hide();
+        $('.product-item').hide();
+        $('.pagination').hide();
         $('#guardrails-table_filter').hide();
         $('.g-img').lazy();
       }
@@ -618,14 +623,14 @@ $(document).ready(function() {
       if($(this).val() == ''){
         $('table#only-bedrail-table').hide();
         $('#only-bedrail-table_info').hide();
-        $('.products.cards').show();
-        $('.pagination-wrap').show();
+        $('.product-item').show();
+        $('.pagination').show();
         $('#guardrails-table_filter').show();
       }else{
         $('table#only-bedrail-table').show();
         $('#only-bedrail-table_info').show();
-        $('.products.cards').hide();
-        $('.pagination-wrap').hide();
+        $('.product-item').hide();
+        $('.pagination').hide();
         $('#guardrails-table_filter').hide();
         $('.b-img').lazy();
       }
