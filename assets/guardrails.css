@@ -265,16 +265,17 @@
   display: none;
 }
 #only-guardrails-table tbody tr td{
-  color: #8daadb;
-  /* font-family: 'Gotham Medium'; */
   display: inline-block;
   background-color: white;
+  color: #8daadb;
+  font-family: 'Gotham Medium';
 }
+
 #only-bedrail-table tbody tr td{
   display: inline-block;
   background-color: white;
   color: #8daadb;
-  /* font-family: 'Gotham Medium'; */
+  font-family: 'Gotham Medium';
 }
 #only-guardrails-table img.g-img{
   max-width: 100% !important;
@@ -535,7 +536,7 @@
   width: 20%;
 }
 
-table.dataTable.row-border tbody th, table.dataTable.row-border tbody td, table.dataTable.display tbody th, table.dataTable.display tbody td {
+table.dataTable.display tbody td {
     border-top: none !important;
 }
 
