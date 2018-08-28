@@ -851,7 +851,7 @@ $(document).ready(function() {
   for (var i = 0; i < h6.length; i++) {
 
     var click = h6[i]
-
+//for dropdown menu
     $(click).click(function(e) {
       e.stopPropagation();
 
@@ -859,12 +859,6 @@ $(document).ready(function() {
 
       filterList = $('#filterList', h6Parent);
       var fadeIn = $('.fadeIn', h6Parent);
-
-      // if ( $(filterList).css('opacity') == '0' ) {
-      //    $(fadeIn).css('opacity','1');
-      // } else  {
-      //    $(filterList).css('opacity','0');
-      // }
 
       if ( $(filterList).css('display') == 'none' ) {
          $(fadeIn).css('display','block');

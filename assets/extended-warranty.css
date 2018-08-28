@@ -20,11 +20,11 @@
 }
 
 .title {
-  margin-top: 180px;
+  margin-top: 110px;
 }
 
 .main_img {
-  max-width: 75%;
+  width: 43%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -107,15 +107,16 @@ div.form{
 }*/
 div.form label{
   color: #8dabdd!important;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 500;
+  font-family: 'Montserrat, Arial';
 }
 div.form input{
 border-radius: 0;
 display: flex;
 width: 150%;
 height: 48px;
-margin-top: 8px;
+margin-top: 6px;
 }
 
 div.form input:focus{
@@ -151,13 +152,13 @@ label{
   text-align: left;
   position: relative;
   /* width: 80%; */
-  left: 22%;
+  left: 23%;
 }
 div.row.title h1{
   text-align: center;
   font-family: 'Chalkduster';
   color: #F97CA0 !important;
-  font-size: 450%;
+  font-size: 395%;
   margin: 0;
 }
 h4.copy-bullet{
@@ -219,9 +220,8 @@ div.correct-variant{
 
 @media only screen and (max-width: 1400px){
   h4.copy-bullet {
-    font-size: 139%;
+    font-size: 135%;
   }
-
   .bullet{
     left: 16%;
   }
@@ -236,7 +236,10 @@ div.correct-variant{
 }
 @media only screen and (max-width: 1250px){
   div.row.title h1{
-    font-size: 350%;
+    font-size: 265%;
+  }
+  .main_img{
+    width: 60%;
   }
   .bullet{
     padding-bottom: 30px;

@@ -247,7 +247,7 @@
 
 .sidenav-container .title-active {
   background-color: white;
-  color: #0e2f63;
+  color: #0e2f63 !important;
 }
 
 .sidenav-container ul.dropdown .title-active{
@@ -288,6 +288,8 @@
 
   .sidenav-container .active {
     background-color: white;
+    color: #0e2f63;
+    font-family: 'Gotham Bold';
   }
 
   .mainmenu

@@ -1409,17 +1409,19 @@ $('#Material ul li :checkbox').click(function() {
                   var swatchLink = url.split(/"/)[1];
                   var swatchColor = swatchLink.split("/")[11].split(".")[0].replace(/[0-9]/g, '').split("-").join(" ").replace(/\b\w/g, l => l.toUpperCase()).strip()
                   //from li
-                  var imageColor = $(this).attr("title").replace(/\d+/g, '').replace(/[{()}]/g, '').strip();
-
+                  var imageColor = $(this).attr("title").replace(/\d+/g, '').replace(/[{()}]/g, '').strip()
+                  var imageCap = imageColor.split(" ").map(function(word) { return (word.charAt(0).toUpperCase() + word.slice(1));
+                  }).join(' ').replace(/\//g, "").replace( /\s\s+/g, ' ' )
                    // compare isolated image color from swatch with isolated image color from product title (taken from id)
-                   if (imageColor == swatchColor) {
+                   if (imageCap == swatchColor) {
                      var productLink = "http://www.deltachildren.com" + $('a', this).attr('href'); // use this variable in varImageSrc
                      var productVariantHref = "https://www.deltachildren.com" + $(this).find('a').attr('href');
                      var varImageSrc =$("a[href='"+productVariantHref+"']").find('.imgHB').attr('src')  // finds specific variant and then the src for it
-
+                     console.log(productVariantHref)
+                     console.log(varImageSrc)
+                     debugger;
                      var productContainer = $(this).parent().parent().parent();
                      var swatchSelectedImageSrc = $('a', this).css('background-image').split(/"/)[1];
-
                       $('.product-item__image', productContainer).attr('srcset', varImageSrc);
                       $('product-item__link', productContainer).attr('href', swatchSelectedImageSrc);
                       $('h3 a', productContainer).attr('href', productVariantHref);
