@@ -108,13 +108,20 @@ div.form{
 div.form label{
   color: #8dabdd!important;
   font-size: 16px;
+  font-weight: 500;
 }
 div.form input{
 border-radius: 0;
 display: flex;
 width: 150%;
-height: 45px;
+height: 48px;
 margin-top: 8px;
+}
+
+div.form input:focus{
+  outline: none !important;
+  border: 1px solid red;
+  box-shadow: 0 0 3px #e75e37;
 }
 
 h3.ew{
@@ -203,6 +210,7 @@ div.correct-variant{
 
 #terms_conditions{
   position: relative;
+  margin-top: -10px;
 }
 
 #terms_conditions div{
@@ -280,6 +288,8 @@ input#accepts-terms-and-conditions{
 .columns span {
   display: inline-block;
   color: #3743a1;
+  padding-top: 7px;
+  font-size: 17px;
 }
 
 .columns select {
@@ -323,6 +333,7 @@ d_price {
   margin-top: 10px;
   color:#8dabdd;
   font-size: 17px;
+  font-weight: 600;
 }
 
 .large-6{
@@ -343,17 +354,17 @@ d_price {
 }
 
 .large-6 label[for="accepts-terms-and-conditions"] {
-  margin-left: -2%;
+  display: block;
+  padding-left: 25px;
   font-size: 16px;
 }
 
 .large-6 input#accepts-terms-and-conditions{
-  width: 10px;
-  height: 0px;
-  padding: 0;
-  margin: 0px;
-  /* vertical-align: bottom; */
+  width: 13px;
+  height: 13px;
+  margin: 0;
   position: relative;
-  top: 12px;
-  overflow: hidden;
+  top: 20px;
 }
+
+i
