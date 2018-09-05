@@ -64,21 +64,21 @@
    display: none;
 }
 .sidenav-container {
-    float: left;
-    position: relative;
-    margin: 115px -2px 0 0;
-    min-height: -webkit-fill-available;
-    z-index: 1;
-  	background-color: #435c90;
-  	color: white;
-  	font-family: 'Gotham Bold';
-    max-width: 226px;
-    padding-bottom: 284%;
+  float: left;
+  position: relative;
+  margin: 115px -2px 0 0;
+  min-height: -webkit-fill-available;
+  z-index: 1;
+  background-color: #435c90;
+  color: white;
+  font-family: 'Gotham Bold';
+  max-width: 226px;
+  padding-bottom: 271%;
 }
 
 .sidenav-header h1 {
  padding: 22px 0px 14px 14px;
- font-size: 33px;
+ font-size: 31px;
  font-family: 'Gotham Book';
  text-transform: uppercase;
  font-weight: lighter;

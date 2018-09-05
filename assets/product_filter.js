@@ -1411,7 +1411,9 @@ $('#Material ul li :checkbox').click(function() {
                   //from li
                   var imageColor = $(this).attr("title").replace(/\d+/g, '').replace(/[{()}]/g, '').strip()
                   var imageCap = imageColor.split(" ").map(function(word) { return (word.charAt(0).toUpperCase() + word.slice(1));
-                  }).join(' ').replace(/\//g, "").replace( /\s\s+/g, ' ' )
+                  }).join(' ').replace(/\//g, " ").replace( /\s\s+/g, ' ' )
+                  console.log(imageCap === swatchColor)
+                  // debugger;
                    // compare isolated image color from swatch with isolated image color from product title (taken from id)
                    if (imageCap == swatchColor) {
                      var productLink = "http://www.deltachildren.com" + $('a', this).attr('href'); // use this variable in varImageSrc
@@ -1420,6 +1422,7 @@ $('#Material ul li :checkbox').click(function() {
                      console.log(productVariantHref)
                      console.log(varImageSrc)
                      debugger;
+
                      var productContainer = $(this).parent().parent().parent();
                      var swatchSelectedImageSrc = $('a', this).css('background-image').split(/"/)[1];
                       $('.product-item__image', productContainer).attr('srcset', varImageSrc);

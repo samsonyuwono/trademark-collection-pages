@@ -189,7 +189,23 @@
       "checkout": "Checkout",
       "empty_text": "Your cart is empty",
       "empty_button": "Start shopping"
-    }
+    },
+    "ajax": {
+      "add_error": "An error has occurred. {{ product_title }} could not be added to your cart.",
+      "add_success": "{{ product_title }} {{ variant_title }} has been added to your cart (x{{ product_quantity }}). {{ view_cart_link }}",
+      "add_with_variants": "{{ product_title }} has multiple variants. Please visit the product detail page to select your preference. {{ view_product_link }}",
+      "view_cart_link": "View Cart",
+      "view_product_link": "View Product Details"
+    },
+    "backorder": "Item is on backorder",
+    "checkout": "Checkout",
+    "continue_shopping": "continue shopping",
+    "empty_html": "Your shopping cart is empty.",
+    "remove_prompt": "Are you sure you want to remove {{ product_title }} {{ variant_title }} from your cart?",
+    "subtotal": "Subtotal",
+    "title": "Your Cart",
+    "update": "Update",
+    "view_cart": "View Cart"
   },
   "blog": {
     "article": {
@@ -341,6 +357,12 @@
       "successfully_sent": "Your message has been sent. We will get back to you as soon as possible."
     }
   },
+  "breadcrumbs": {
+  "home": "Home",
+  "account": "My Account",
+  "products": "Products",
+  "search": "Search"
+},
   "search": {
     "general": {
       "title": "Search",
